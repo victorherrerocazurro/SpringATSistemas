@@ -1,0 +1,13 @@
+package com.atsistemas;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class Configuracion {
+	
+	public Persona pedro(){
+		return new Persona();
+	}
+	
+
+}

@@ -1,0 +1,18 @@
+package com.atsistemas.entidades;
+
+public class Factoria {
+
+	public Coche fabricar(){
+		return null;
+	}
+	
+	public interface Coche {
+		
+	}
+	
+	private class Ferrari implements Coche{
+		
+	}
+}
+
+

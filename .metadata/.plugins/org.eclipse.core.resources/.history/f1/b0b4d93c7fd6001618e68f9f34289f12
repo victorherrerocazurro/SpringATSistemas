@@ -1,0 +1,9 @@
+package com.atsistemas.entidades;
+
+import java.util.List;
+
+public class Empresa {
+
+	private List<Contrato> contratos;
+	
+}

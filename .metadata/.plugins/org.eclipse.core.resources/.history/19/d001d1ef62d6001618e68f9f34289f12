@@ -1,0 +1,13 @@
+package com.atsistemas.entidades;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Lanzador {
+
+	public static void main(String[] args) {
+		// Instanciar el contenedor
+		new ClassPathXmlApplicationContext("");
+
+	}
+
+}

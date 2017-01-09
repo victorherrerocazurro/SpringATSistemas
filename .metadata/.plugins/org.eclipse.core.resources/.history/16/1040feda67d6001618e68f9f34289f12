@@ -1,0 +1,17 @@
+package com.atsistemas.entidades;
+
+public class LanzadorFactoria {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Singleton instanciaDirecta = Singleton.getInstance();
+		
+		System.out.println("instanciaDirecta: " + instanciaDirecta);
+		
+		Singleton instanciaSpring = context.getBean("singleton", Singleton.class);
+		
+		System.out.println("instanciaSpring: " + instanciaSpring);
+
+	}
+
+}

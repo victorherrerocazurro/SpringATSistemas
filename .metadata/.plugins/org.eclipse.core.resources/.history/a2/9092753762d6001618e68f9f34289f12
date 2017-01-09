@@ -1,0 +1,10 @@
+package com.atsistemas.entidades;
+
+public class Lanzador {
+
+	public static void main(String[] args) {
+		// Instanciar el contenedor
+
+	}
+
+}

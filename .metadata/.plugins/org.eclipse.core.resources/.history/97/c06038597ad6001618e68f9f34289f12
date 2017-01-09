@@ -1,0 +1,22 @@
+package com.atsistemas;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class Configuracion {
+	
+	@Bean
+	public Persona pedro(){
+		return new Persona("Pedro",maria());
+	}
+	
+	@Bean
+	public Persona maria(){
+		Persona maria = new Persona();
+		maria.setNombre("Maria");
+		maria.setPareja(null);
+		return maria;
+	}
+
+}

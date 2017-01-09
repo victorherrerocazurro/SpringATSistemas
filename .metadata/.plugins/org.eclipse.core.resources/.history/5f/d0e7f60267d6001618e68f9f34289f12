@@ -1,0 +1,10 @@
+package com.atsistemas.entidades;
+
+public class Singleton {
+
+	private Singleton() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+}

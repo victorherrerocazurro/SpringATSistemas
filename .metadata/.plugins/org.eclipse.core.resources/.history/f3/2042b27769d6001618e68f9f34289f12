@@ -1,0 +1,13 @@
+package com.atsistemas.entidades;
+
+public class Factoria {
+
+	public Coche fabricar(){
+		
+	}
+	
+}
+
+public interface Coche {
+	
+}

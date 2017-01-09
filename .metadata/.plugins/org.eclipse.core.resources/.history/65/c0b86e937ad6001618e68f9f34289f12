@@ -1,0 +1,27 @@
+package com.atsistemas;
+
+import org.springframework.beans.factory.config.ConfigurableBeanFactory;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
+
+@Configuration
+public class Configuracion {
+	
+	private Persona pedro =  new Persona("Pedro",maria());
+	
+	@Bean
+	public Persona pedro(){
+		return pedro;
+	}
+	
+	@Bean
+	@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
+	public Persona maria(){
+		Persona maria = new Persona();
+		maria.setNombre("Maria");
+		maria.setPareja(null);
+		return maria;
+	}
+
+}

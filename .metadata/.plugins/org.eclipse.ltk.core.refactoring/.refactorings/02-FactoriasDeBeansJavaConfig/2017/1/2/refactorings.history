@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;maria&apos; from expression &apos;new Persona()&apos;&#x0D;&#x0A;- Original project: &apos;02-FactoriasDeBeansJavaConfig&apos;&#x0D;&#x0A;- Variable name: &apos;maria&apos;&#x0D;&#x0A;- Destination method: &apos;com.atsistemas.Configuracion.maria()&apos;&#x0D;&#x0A;- Variable expression: &apos;new Persona()&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;maria&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src\/main\/java&lt;com.atsistemas{Configuracion.java" name="maria" replace="true" selection="316 14" stamp="1483972960796" version="1.0"/>
+</session>
