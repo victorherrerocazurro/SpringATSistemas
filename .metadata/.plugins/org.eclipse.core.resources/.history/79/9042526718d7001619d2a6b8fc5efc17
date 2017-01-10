@@ -1,0 +1,15 @@
+package com.atsistemas;
+
+import javax.sql.DataSource;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
+
+@Configuration
+public class Configuracion {
+
+	public NamedParameterJdbcTemplate template(DataSource datasource){
+		return new NamedParameterJdbcTemplate(dataSource);
+	}
+	
+}

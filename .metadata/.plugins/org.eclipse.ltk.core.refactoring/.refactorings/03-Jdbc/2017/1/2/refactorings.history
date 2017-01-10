@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;ds&apos; from expression &apos;new BasicDataSource()&apos;&#x0D;&#x0A;- Original project: &apos;03-Jdbc&apos;&#x0D;&#x0A;- Variable name: &apos;ds&apos;&#x0D;&#x0A;- Destination method: &apos;com.atsistemas.Configuracion.datasource()&apos;&#x0D;&#x0A;- Variable expression: &apos;new BasicDataSource()&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;ds&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src\/main\/java&lt;com.atsistemas{Configuracion.java" name="ds" replace="true" selection="649 21" stamp="1484041703535" version="1.0"/>
+</session>

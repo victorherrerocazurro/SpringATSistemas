@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drivers>
+	<provider id="db2"/>
+	<provider id="exasol"/>
+	<provider id="generic">
+		<driver id="derby_server" category="Derby" custom="false" embedded="false" name="Server" class="org.apache.derby.jdbc.ClientDriver" url="jdbc:derby://{host}:{port}/{database};create=true" port="1527" description="Derby (Java DB) server driver">
+			<library type="jar" path="maven:/org.apache.derby:derbyclient:RELEASE" custom="false">
+				<file id="org.apache.derby:derbyclient" version="10.13.1.1" path="${workspace}\.metadata\.plugins\org.jkiss.dbeaver.core\maven\maven-central\org.apache.derby\derbyclient-10.13.1.1.jar"/>
+			</library>
+		</driver>
+	</provider>
+	<provider id="mysql"/>
+	<provider id="oracle"/>
+	<provider id="postgresql"/>
+</drivers>
