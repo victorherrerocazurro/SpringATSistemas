@@ -11,6 +11,12 @@ public class Aplicacion {
 		Target target = context.getBean(Target.class);
 		
 		target.alta("Pepito");
+		
+		((Extension)target).nuevoMetodo();
+		
+		Target target2 = new Target();
+		
+		((Extension)target2).nuevoMetodo();
 
 	}
 

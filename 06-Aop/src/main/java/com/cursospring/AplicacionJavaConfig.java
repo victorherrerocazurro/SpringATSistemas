@@ -6,7 +6,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class AplicacionJavaConfig {
 
 	public static void main(String[] args) {
-		ApplicationContext context = new AnnotationConfigApplicationContext("com.cursospring");
+		ApplicationContext context = new AnnotationConfigApplicationContext(Configuracion.class);
 		
 		Target target = context.getBean(Target.class);
 		

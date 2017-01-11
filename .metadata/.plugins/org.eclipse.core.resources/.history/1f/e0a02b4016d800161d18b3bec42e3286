@@ -1,0 +1,14 @@
+package com.atsistemas;
+
+public class Servicio {
+
+	public Servicio() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public void metodo() {
+		// TODO Auto-generated method stub
+		System.out.println("En el servicio");
+	}
+
+}

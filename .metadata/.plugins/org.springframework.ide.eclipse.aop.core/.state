@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
+<aop-project name="04-Orm"/>
+<aop-project name="06-Aop">
+<aspect-definition advice-class-name="com.cursospring.Aspecto" advice-method-name="antes" advice-type="BEFORE" aspect-end-line-number="16" aspect-name="aspecto" aspect-start-line-number="16" factory-id="org.springframework.ide.eclipse.aop.core.beanAspectDefinitionElementFactory" file="/06-Aop/src/main/resources/ApplicationContext.xml" pointcut-expression="execution(* com.cursospring.Target.alta(String))" proxy-target-class="false">
+<aop-reference advice-type="BEFORE" bean="1:BeansModel|2:06-Aop|3:src/main/resources/ApplicationContext.xml|7:beans:6|8:com.cursospring.Target#06-Aop#src/main/resources/ApplicationContext.xml#8:8" bean-file="/06-Aop/src/main/resources/ApplicationContext.xml" bean-start-line="8" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/06-Aop/src/main/resources/ApplicationContext.xml" source="=06-Aop/src\/main\/java&lt;com.cursospring{Aspecto.java[Aspecto~antes" source-start-line="6" target="=06-Aop/src\/main\/java&lt;com.cursospring{Target.java[Target~alta~QString;" target-start-line="8"/>
+</aspect-definition>
+<aspect-definition advice-class-name="com.cursospring.ExtensionImpl" advice-type="DECLARE_PARENTS" aspect-end-line-number="20" aspect-name="aspecto" aspect-start-line-number="17" default-impl-name="com.cursospring.ExtensionImpl" factory-id="org.springframework.ide.eclipse.aop.core.beanIntroductionDefinitionElementFactory" file="/06-Aop/src/main/resources/ApplicationContext.xml" introduced-interface-name="com.cursospring.Extension" proxy-target-class="false" type-pattern="com.cursospring.Target+">
+<aop-reference advice-type="DECLARE_PARENTS" bean="1:BeansModel|2:06-Aop|3:src/main/resources/ApplicationContext.xml|7:beans:6|8:com.cursospring.Target#06-Aop#src/main/resources/ApplicationContext.xml#8:8" bean-file="/06-Aop/src/main/resources/ApplicationContext.xml" bean-start-line="8" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/06-Aop/src/main/resources/ApplicationContext.xml" source="=06-Aop/src\/main\/java&lt;com.cursospring{ExtensionImpl.java[ExtensionImpl" source-start-line="3" target="=06-Aop/src\/main\/java&lt;com.cursospring{Target.java[Target" target-start-line="6"/>
+</aspect-definition>
+</aop-project>
+<aop-project name="02-FactoriasDeBeansJavaConfig"/>
 <aop-project name="05-Data"/>
+<aop-project name="07-Web"/>
+<aop-project name="03-Jdbc"/>
 <aop-project name="01-FactoriaDeBeans"/>
 </aop-reference-model>

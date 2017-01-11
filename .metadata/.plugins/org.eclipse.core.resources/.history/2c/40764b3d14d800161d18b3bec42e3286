@@ -1,0 +1,11 @@
+package com.atsistemas;
+
+public class Servicio {
+
+	private Negocio negocio;
+	
+	public Servicio() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

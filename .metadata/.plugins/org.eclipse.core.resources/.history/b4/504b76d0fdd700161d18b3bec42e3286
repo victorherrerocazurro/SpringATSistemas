@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+
+	<bean class="com.cursospring.Target"></bean>
+	
+	<bean id="aspecto" class="com.cursospring.Aspecto"></bean>
+	
+	<aop:config>
+		<aop:pointcut id="EjecucionDeAltaTarget" 
+						expression="execution(* com.cursospring.Target.alta(String))" />
+		<aop:aspect ref="aspecto">
+			<aop:before method="antes" pointcut-ref="EjecucionDeAltaTarget"/>
+			<aop:declare-parents 
+					types-matching="com.cursospring.Target+" 
+					implement-interface="com.cursospring.Extension"/>
+		</aop:aspect>
+	</aop:config>
+
+</beans>
