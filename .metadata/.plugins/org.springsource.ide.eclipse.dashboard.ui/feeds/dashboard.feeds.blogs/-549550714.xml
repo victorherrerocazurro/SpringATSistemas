@@ -5,7 +5,7 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2017-01-10T07:41:59Z</updated>
+  <updated>2017-01-10T07:41:00Z</updated>
   <entry>
     <title>This Week in Spring - January 10th, 2017</title>
     <link rel="alternate" href="https://spring.io/blog/2017/01/10/this-week-in-spring-january-10th-2017" />
@@ -14,7 +14,7 @@
       <name>Josh Long</name>
     </author>
     <id>tag:spring.io,2017-01-10:2773</id>
-    <updated>2017-01-10T07:41:59Z</updated>
+    <updated>2017-01-10T07:41:00Z</updated>
     <content type="html">&lt;p&gt;Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! We&amp;rsquo;ve got a lot to cover this week so let&amp;rsquo;s get to it! This week I&amp;rsquo;m in San Francisco and &lt;a href="https://www.meetup.com/NYC-SUG/events/236521420/"&gt;New York City&lt;/a&gt; talking to developers and toiling on the final edits to the O&amp;rsquo;Reilly book &lt;a href="http://shop.oreilly.com/product/0636920038252.do"&gt;&lt;em&gt;Cloud Native Java&lt;/em&gt;&lt;/a&gt; (almost there!).&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;Spring Cloud Task ninja &lt;a href="https://spring.io/blog/2017/01/06/spring-cloud-task-1-1-1-release-is-now-available"&gt;Glen Renfro just announced Spring Cloud Task 1.1.1&lt;/a&gt;&lt;/li&gt;
@@ -23,7 +23,7 @@
   &lt;li&gt;Spring Batch and Spring Cloud Task lead &lt;a href="https://spring.io/blog/2017/01/04/spring-batch-4-0-0-m1-is-now-available"&gt;Michael Minella just announced Spring Batch 4.0&lt;/a&gt; complete with a lot of niceties and - in particular a feature I&amp;rsquo;ve wanted &lt;em&gt;forever&lt;/em&gt; - an easy way to build instances of the more sophisticated &lt;code&gt;ItemReader&lt;/code&gt; and &lt;code&gt;ItemWriter&lt;/code&gt; intances, including the &lt;code&gt;FlatFileItemReader&lt;/code&gt;! This is been a long time in coming and I can&amp;rsquo;t wait for this release. This rounds out the already epic Java configuration story for Spring Batch.&lt;/li&gt;
   &lt;li&gt;Spring IO Platform lead Andy Wilkinson just announced &lt;a href="https://spring.io/blog/2017/01/04/spring-io-platform-athens-sr2"&gt;Spring IO Platform Athens SR2&lt;/a&gt;, which brings with it new revisions of Spring Boot, Spring Retry, Spring AMQP and so much more&lt;/li&gt;
   &lt;li&gt;Spring framework ninja and Kotlin afficianado Sebastien Deleuze just blogged about some of the coming improvements to support &lt;a href="https://spring.io/blog/2017/01/04/introducing-kotlin-support-in-spring-framework-5-0"&gt;the Kotlin language in Spring framework 5&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Pivotal&amp;rsquo;s very own Ben Wilcox put together a very nice example project that demonstrates &lt;a href="https://github.com/benwilcock/pcf-spring-cloud-services-demo"&gt;how to use Spring Cloud Services with Pivotal Cloud Foundry&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Pivotal&amp;rsquo;s very own Ben Wilcock put together a very nice example project that demonstrates &lt;a href="https://github.com/benwilcock/pcf-spring-cloud-services-demo"&gt;how to use Spring Cloud Services with Pivotal Cloud Foundry&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;He &lt;em&gt;also&lt;/em&gt; put together a handy &lt;a href="https://github.com/benwilcock/spring-cloud-contracts"&gt;demo of Spring Cloud Contracts&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Our very own Toshiaki Maki Making put together a nice post on &lt;a href="https://blog.ik.am/entries/401"&gt;https://blog.ik.am/entries/401&lt;/a&gt; on some of the &lt;a href="https://blog.ik.am/entries/401"&gt;niceties in Spring Boot 1.5 and how they integrate with the Pivotal Apps Manager for Cloud Foundry&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Daniel Olszewski has put together a quick and easy look at &lt;a href="http://dolszewski.com/spring/multiple-ttl-caches-in-spring-boot/"&gt;configuring time-to-live values for the Spring Cache abstraction&lt;/a&gt;&lt;/li&gt;
@@ -350,16 +350,18 @@ public FlatFileItemReader reader(Resource resource) {&#xD;
 &lt;pre&gt;&lt;code class="prettyprint java"&gt;List&amp;lt;Foo&amp;gt; result = Arrays.asList(restTemplate.getForObject(url, Foo[].class));
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;While in Kotlin with Spring Framework 5 extensions you will be able to write:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint koltin"&gt;val result : List&amp;lt;Foo&amp;gt; = restTemplate.getForObject(url)
+&lt;pre&gt;&lt;code class="prettyprint kotlin"&gt;val result: List&amp;lt;Foo&amp;gt; = restTemplate.getForObject(url)
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Be aware that Kotlin extensions are statically resolved, you have to import them. In the example above, you need to add &lt;code&gt;import org.springframework.web.client.RestOperationsExtension.getForObject&lt;/code&gt; to be able to use it. Kotlin extensions are generally automatically suggested by IDEs like IntelliJ IDEA (like static imports), but it does not work yet for extensions nested in a container &lt;code&gt;object&lt;/code&gt; (you can vote for &lt;a href="https://youtrack.jetbrains.com/issue/KT-15440"&gt;KT-15440&lt;/a&gt;) so until it is fixed you will have to add Spring Kotlin extensions imports manually.&lt;/p&gt;
-&lt;p&gt;Available &lt;code&gt;RestTemplate&lt;/code&gt; or functional web API extensions currently available in Spring Framework 5.0 M4 are:&lt;/p&gt;
+&lt;p&gt;Web API Kotlin extensions available in Spring Framework 5.0 are:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href="https://github.com/spring-projects/spring-framework/blob/master/spring-web/src/main/kotlin/org/springframework/web/client/RestOperationsExtension.kt"&gt;RestOperationsExtension&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="https://github.com/spring-projects/spring-framework/blob/master/spring-web-reactive/src/main/kotlin/org/springframework/web/reactive/function/server/ServerRequestExtension.kt"&gt;ServerRequestExtension&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="https://github.com/spring-projects/spring-framework/blob/master/spring-web-reactive/src/main/kotlin/org/springframework/web/reactive/function/BodyInsertersExtension.kt"&gt;BodyInsertersExtension&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="https://github.com/spring-projects/spring-framework/blob/master/spring-web-reactive/src/main/kotlin/org/springframework/web/reactive/function/BodyExtractorsExtension.kt"&gt;BodyExtractorsExtension&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="https://github.com/spring-projects/spring-framework/blob/master/spring-web-reactive/src/main/kotlin/org/springframework/web/reactive/function/client/ClientResponseExtension.kt"&gt;ClientResponseExtension&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/spring-projects/spring-framework/blob/master/spring-context/src/main/kotlin/org/springframework/ui/ModelExtension.kt"&gt;ModelExtension&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/spring-projects/spring-framework/blob/master/spring-context/src/main/kotlin/org/springframework/ui/ModelMapExtension.kt"&gt;ModelMapExtension&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;These extensions also provide member functions supporting natively Kotlin &lt;code&gt;KClass&lt;/code&gt;, allowing you to specify &lt;code&gt;Foo::class&lt;/code&gt; parameter instead of &lt;code&gt;Foo::class.java&lt;/code&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#reactor-kotlin-extensions" class="anchor" name="reactor-kotlin-extensions"&gt;&lt;/a&gt;Reactor Kotlin extensions&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://projectreactor.io/"&gt;Reactor&lt;/a&gt; is the reactive foundation Spring Framework 5.0 is built upon, and there are good chances you are going to use its &lt;a href="https://projectreactor.io/docs/core/release/api/reactor/core/publisher/Mono.html"&gt;Mono&lt;/a&gt;, &lt;a href="https://projectreactor.io/docs/core/release/api/reactor/core/publisher/Flux.html"&gt;Flux&lt;/a&gt; and &lt;a href="https://projectreactor.io/docs/test/release/api/reactor/test/StepVerifier.html"&gt;StepVerifier&lt;/a&gt; APIs when developing a reactive web application.&lt;/p&gt;
@@ -376,7 +378,7 @@ context.registerBean(Bar.class, () -&amp;gt; new &#xD;
 &lt;p&gt;While in Kotlin, reified type parameters allow us to simply write:&lt;/p&gt;
 &lt;pre&gt;&lt;code class="prettyprint kotlin"&gt;val context = GenericApplicationContext()&#xD;
 context.registerBean(Foo::class)&#xD;
-context.registerBean{ Bar(it.getBean(Foo::class)) }
+context.registerBean { Bar(it.getBean(Foo::class)) }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;You can see a concrete example of Spring application using both functional &lt;a href="https://github.com/mix-it/mixit/blob/master/src/main/kotlin/mixit/controller/UserController.kt"&gt;web&lt;/a&gt; and &lt;a href="https://github.com/mix-it/mixit/blob/master/src/main/kotlin/mixit/Application.kt"&gt;bean registration&lt;/a&gt; API at &lt;a href="https://github.com/mix-it/mixit/"&gt;https://github.com/mix-it/mixit/&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;ApplicationContext&lt;/code&gt; related Kotlin extensions available are:&lt;/p&gt;

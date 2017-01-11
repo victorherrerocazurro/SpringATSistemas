@@ -1,0 +1,6 @@
+CREATE SCHEMA "USER";
+
+CREATE TABLE "USER"."Cliente" (
+	id INTEGER,
+	nombre VARCHAR(50)
+);

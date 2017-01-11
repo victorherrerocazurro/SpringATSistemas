@@ -1,1 +1,5 @@
 1484041703535	Extract local variable 'ds'
+1484047034251	Extract interface 'ClienteDao'
+1484051705110	Copy package
+1484052441334	Copy package
+1484053479109	Copy package

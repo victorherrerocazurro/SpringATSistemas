@@ -1,0 +1,4 @@
+CREATE TABLE cliente {
+	id INTEGER,
+	nombre VARCHAR 
+};

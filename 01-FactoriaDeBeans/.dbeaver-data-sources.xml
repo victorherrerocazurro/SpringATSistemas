@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data-sources>
+	<data-source id="derby_server-15988a6b7b3-74dade6a9046630a" provider="generic" driver="derby_server" name="Derby - Cliente" save-password="true" show-system-objects="true" read-only="false">
+		<connection host="localhost" port="1527" server="" database="Clientes" url="jdbc:derby://localhost:1527/Clientes;create=true" user="user" password="BhcDMiGi" type="dev">
+			<network-handler type="TUNNEL" id="ssh_tunnel" enabled="false" save-password="false">
+				<property name="sshConnectTimeout" value="10000"/>
+				<property name="port" value="22"/>
+				<property name="authType" value="PASSWORD"/>
+			</network-handler>
+			<network-handler type="PROXY" id="socks_proxy" enabled="false" save-password="false">
+				<property name="socks-port" value="1080"/>
+			</network-handler>
+		</connection>
+	</data-source>
+</data-sources>

@@ -3,4 +3,7 @@
 <typeInfo handle="=03-Jdbc/C:\/Users\/ATSTAFF\/.m2\/repository\/org\/springframework\/spring-jdbc\/4.3.5.RELEASE\/spring-jdbc-4.3.5.RELEASE.jar&lt;org.springframework.jdbc.core.namedparam(NamedParameterJdbcTemplate.class[NamedParameterJdbcTemplate" modifiers="33" timestamp="1484038330481"/>
 <typeInfo handle="=03-Jdbc/C:\/Users\/ATSTAFF\/.m2\/repository\/org\/springframework\/spring-jdbc\/4.3.5.RELEASE\/spring-jdbc-4.3.5.RELEASE.jar&lt;org.springframework.jdbc.core(RowMapper.class[RowMapper" modifiers="1537" timestamp="1484038330481"/>
 <typeInfo handle="=01-FactoriaDeBeans/C:\/Program Files\/Java\/jre1.8.0_112\/lib\/rt.jar&lt;javax.sql(DataSource.class[DataSource" modifiers="1537" timestamp="1483955371004"/>
+<typeInfo handle="=01-FactoriaDeBeans/C:\/Program Files\/Java\/jre1.8.0_112\/lib\/rt.jar&lt;java.sql(Driver.class[Driver" modifiers="1537" timestamp="1483955371004"/>
+<typeInfo handle="=04-Orm/src\/main\/java&lt;com.atsistemas.persistencia{ClienteDao.java[ClienteDao" modifiers="513" timestamp="1484047034240"/>
+<typeInfo handle="=01-FactoriaDeBeans/C:\/Users\/ATSTAFF\/.m2\/repository\/org\/springframework\/spring-context\/4.3.5.RELEASE\/spring-context-4.3.5.RELEASE.jar&lt;org.springframework.context.annotation(AnnotationConfigApplicationContext.class[AnnotationConfigApplicationContext" modifiers="33" timestamp="1483957314535"/>
 </typeInfoHistroy>
