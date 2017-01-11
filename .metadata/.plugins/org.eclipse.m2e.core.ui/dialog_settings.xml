@@ -7,6 +7,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="05-Data"/>
 			<item value="04-Orm"/>
 			<item value="03-Jdbc"/>
 			<item value="02-FactoriasDeBeansJavaConfig"/>

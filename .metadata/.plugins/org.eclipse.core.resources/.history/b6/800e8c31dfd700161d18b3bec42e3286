@@ -1,0 +1,25 @@
+package com.atsistemas;
+
+import javax.sql.DataSource;
+
+import org.apache.commons.dbcp2.BasicDataSource;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+
+@Configuration
+@EnableJpaRepositories("com.atsistemas.persistencia")
+public class Configuracion {
+
+	@Bean
+	public DataSource dataSource(){
+		BasicDataSource ds = new BasicDataSource();
+		
+		ds.setUrl("jdbc:derby://localhost:1527/Clientes;create=true");
+		ds.setUsername("user");
+		ds.setPassword("user");
+		
+		return ds;
+	}
+	
+}

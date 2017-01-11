@@ -1,0 +1,10 @@
+package com.cursospring;
+
+public class Contexto {
+
+	public static Target getBean(Class<Target> class1) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

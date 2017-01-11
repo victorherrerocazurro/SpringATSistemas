@@ -1,0 +1,17 @@
+package com.cursospring;
+
+public class Target {
+
+	public void alta() {
+
+	}
+
+	public void baja() {
+
+	}
+	
+	public void consulta() {
+
+	}
+
+}

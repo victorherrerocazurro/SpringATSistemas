@@ -1,0 +1,20 @@
+package com.atsistemas;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.atsistemas.persistencia.ClienteRepository;
+
+public class Aplicacion {
+
+	public static void main(String[] args) {
+
+		ApplicationContext context =  new AnnotationConfigApplicationContext("com.atsistemas");
+		
+		ClienteRepository dao = context.getBean(ClienteRepository.class);
+		
+		dao.findByNombre("victor");
+		
+	}
+
+}

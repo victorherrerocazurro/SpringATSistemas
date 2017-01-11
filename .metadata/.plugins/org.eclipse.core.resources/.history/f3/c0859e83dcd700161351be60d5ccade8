@@ -1,0 +1,5 @@
+package com.atsistemas.persistencia;
+
+public interface ClienteRepository{
+
+}

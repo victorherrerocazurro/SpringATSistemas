@@ -1,0 +1,25 @@
+package com.cursospring;
+
+public class Target {
+
+	public void alta(String nombre) {
+
+	}
+	
+	public void alta( int id, String nombre) {
+
+	}
+	
+	public void alta(int id) {
+
+	}
+
+	public void baja() {
+
+	}
+	
+	public void consulta() {
+
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.cursospring;
+
+public class ProxySeguridad extends Target {
+	@Override
+	public void metodo() {
+		System.out.println("Estamos en el Prxy, antes de ejecutar la logica del Target");
+		super.metodo();
+	}
+}
