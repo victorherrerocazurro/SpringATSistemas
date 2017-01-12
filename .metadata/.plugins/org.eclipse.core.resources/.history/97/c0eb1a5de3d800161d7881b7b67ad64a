@@ -1,0 +1,10 @@
+package com.cursospring.modelo.negocio;
+
+import com.cursospring.modelo.entidades.Usuario;
+
+public interface PortalParejasNegocio {
+
+	void buscarAfines(Usuario elQueBusca, Usuario candidato);
+	void buscarIdeal();
+	
+}

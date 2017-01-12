@@ -1,0 +1,11 @@
+package com.cursospring.modelo.negocio;
+
+public interface PortalParejasNegocio {
+
+	void buscarAfines();
+	void buscarIdeal();
+	
+	void registroUsuario();
+	void login();
+	
+}

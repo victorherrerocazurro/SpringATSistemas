@@ -1,0 +1,17 @@
+package com.cursospring.modelo.persistencia;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.cursospring.modelo.entidades.Usuario;
+
+public interface UsuarioDao extends JpaRepository<Usuario, String>{
+
+	void alta(Usuario usuario);
+	
+	List<Usuario> buscarTodos();
+	
+	Usuario buscarUsuarioPorNombreYPassword(String nombre, String password);
+	
+}

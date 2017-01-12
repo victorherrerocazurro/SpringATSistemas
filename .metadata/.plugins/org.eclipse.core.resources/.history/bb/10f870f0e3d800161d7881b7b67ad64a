@@ -1,0 +1,7 @@
+package com.cursospring.modelo.servicio;
+
+public interface PortalParejasServicio {
+
+	
+	
+}

@@ -1,0 +1,10 @@
+package com.cursospring.modelo.persistencia;
+
+import com.cursospring.modelo.entidades.Usuario;
+
+public interface UsuarioDao {
+
+	void registroUsuario(Usuario usuario);
+	
+	
+}

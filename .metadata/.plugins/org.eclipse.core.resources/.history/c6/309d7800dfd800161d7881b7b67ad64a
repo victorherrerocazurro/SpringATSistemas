@@ -1,0 +1,11 @@
+package com.cursospring.modelo.persistencia;
+
+import com.cursospring.modelo.entidades.Usuario;
+
+public interface UsuarioDao {
+
+	void alta(Usuario usuario);
+	
+	Usuario buscarAfin(Usuario usuario);
+	
+}

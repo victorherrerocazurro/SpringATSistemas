@@ -1,0 +1,15 @@
+package com.cursospring.modelo.persistencia;
+
+import java.util.List;
+
+import com.cursospring.modelo.entidades.Usuario;
+
+public interface UsuarioDao {
+
+	void alta(Usuario usuario);
+	
+	List<Usuario> buscarTodos();
+	
+	Usuario buscarUsuarioPorNombreYPassword(String nombre, String password);
+	
+}

@@ -1,0 +1,10 @@
+package com.cursospring.modelo.servicio;
+
+public interface PortalParejasServicio {
+
+	void registrar();
+	void loguear();
+	void buscarAfin();
+	void buscarIdeal();
+	
+}

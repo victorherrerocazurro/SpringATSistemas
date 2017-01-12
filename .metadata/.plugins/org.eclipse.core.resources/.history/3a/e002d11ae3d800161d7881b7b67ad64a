@@ -1,0 +1,10 @@
+package com.cursospring.modelo.negocio;
+
+import java.util.Date;
+
+public interface PortalParejasNegocio {
+
+	void buscarAfines(Usuario elQueBusca);
+	void buscarIdeal();
+	
+}
