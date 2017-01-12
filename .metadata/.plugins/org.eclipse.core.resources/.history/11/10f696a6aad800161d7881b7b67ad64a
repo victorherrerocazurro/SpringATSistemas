@@ -1,0 +1,21 @@
+package com.cursospring.controlador;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+@Controller
+@RequestMapping("/GestionUsuario")
+public class Controlador {
+	
+	@RequestMapping(method= RequestMethod.POST)
+	public void alta(){
+		
+	}
+	
+	@RequestMapping(method = RequestMethod.DELETE)
+	public void baja(){
+		
+	}
+
+}

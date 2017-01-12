@@ -1,0 +1,17 @@
+package com.cursospring.servicios;
+
+import com.cursospring.entidades.Cliente;
+
+public class Servicio {
+
+	public void altaCliente(Cliente cliente) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void bajaCliente() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

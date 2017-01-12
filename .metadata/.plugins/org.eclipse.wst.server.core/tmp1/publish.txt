@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Thu Jan 12 13:28:12 CET 2017
+org.eclipse.jst.jee.server\:09-Mvc=C\:\\Users\\ATSTAFF\\Desktop\\apache-tomcat-8.5.9\\wtpwebapps\\09-Mvc
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\ATSTAFF\\.m2\\repository\\org\\springframework\\spring-web\\4.3.5.RELEASE\\spring-web-4.3.5.RELEASE.jar=C\:\\Users\\ATSTAFF\\Desktop\\apache-tomcat-8.5.9\\wtpwebapps\\09-Mvc\\WEB-INF\\lib\\spring-web-4.3.5.RELEASE.jar
