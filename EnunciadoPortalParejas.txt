@@ -1,0 +1,16 @@
+Crear una applicacion que permita
+
+	- Regitrar un usuario
+	- Login de usuario a partir de nombre y password
+	- Busqueda de afines, que retornara un lstado de usuarios con los que el usuario logeado es afin
+	- Busqueda de ideal, que retorara un unico usuario con el que el usuario logueao es ideal
+
+Se han de definir una arquitectura de 5 capas (Vista, Cotrolador, Servicio, negocio, persistencia), con interfaces que desacoplen las capas.
+
+El usuario tendra los siguientes datos: nombre, password, genero,fecha de nacimineto, altura
+
+Dos usuarios seran considerados afines si
+	diferencia de altura es menor que 50cm y diferencia de edad es menor que 10 años
+
+Dos usuarios seran considerados ideales si
+	tienen distinto genero y diferencia de altura es menor que 10cm y diferencia de edad es menor que 5 años
