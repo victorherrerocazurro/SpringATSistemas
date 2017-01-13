@@ -4,3 +4,5 @@
 1484296132010	Rename type 'ReglasIdeal'
 1484296143398	Extract interface 'ReglasIdeal'
 1484296175736	Move compilation units
+1484309768466	Move compilation unit
+1484309775316	Rename type 'PortalPArejasNegocioImplTest'

@@ -23,13 +23,17 @@ public class ControladorSpringMvc {
 
 	@Autowired
 	private PortalParejasServicio servicio;
-
+	
 	// GET -> http://......?nombre=&password=
 
 	// POST -> http://...... y adems en el cuerpo se envia nombre=&password=
 
 	// POST + HTTPS -> https://...... y adems en el cuerpo se envia encriptado
 	// (nombre=&password=)
+
+	public void setServicio(PortalParejasServicio servicio) {
+		this.servicio = servicio;
+	}
 
 	@RequestMapping(path = "/login", method = RequestMethod.POST)
 	public String login(@RequestParam String nombre, @RequestParam String password, Model modelo, HttpSession sesion) {

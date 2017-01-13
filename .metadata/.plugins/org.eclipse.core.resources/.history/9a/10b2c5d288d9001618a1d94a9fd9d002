@@ -1,0 +1,29 @@
+package com.cursospring.modelo.negocio.basico;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import com.cursospring.modelo.entidades.Usuario;
+
+public class BasicasReglasAfinesTest {
+
+	@Test
+	public void pruebaCuandoUnoDeLosUsuariosEsNulo() {
+		
+		//Inicializacion
+		//	Sut
+		BasicasReglasAfines sut = new BasicasReglasAfines();
+		//	Datos de entrada
+		Usuario elQueBusca = new Usuario();
+		Usuario candidato = null;
+		
+		
+		//Ejecutar la funcionalidad
+		sut.sonAfines(elQueBusca, candidato);
+		
+		
+		fail("Not yet implemented");
+	}
+
+}
