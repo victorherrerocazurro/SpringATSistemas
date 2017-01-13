@@ -2,6 +2,7 @@ package com.cursospring.modelo.negocio;
 
 import static org.junit.Assert.fail;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import com.cursospring.modelo.entidades.Usuario;
@@ -9,6 +10,7 @@ import com.cursospring.modelo.entidades.Usuario;
 public class PortalParejasNegocioImplTest {
 
 	@Test
+	@Ignore
 	public void pruebaDeEncontrarUnIdeal() {
 		
 		//Inicializacion

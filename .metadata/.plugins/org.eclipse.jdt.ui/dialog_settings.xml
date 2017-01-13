@@ -12,7 +12,9 @@
 		<item value="false" key="renameSubpackages"/>
 		<item value="false" key="updateQualifiedNames"/>
 		<item value="*" key="patterns"/>
+		<item value="false" key="updateSimilarElements"/>
 		<item value="false" key="updateTextualMatches"/>
+		<item value="1" key="updateSimilarElementsMatchStrategy"/>
 	</section>
 	<section name="GenerateConstructorUsingFieldsSelectionDialog">
 		<item value="false" key="OmitCallToSuper"/>
@@ -106,6 +108,8 @@
 	</section>
 	<section name="AddUnimplementedConstructorsDialog">
 		<item value="false" key="OmitCallToSuper"/>
+	</section>
+	<section name="RenameInformationPopup">
 	</section>
 	<section name="DialogBounds_AddUnimplementedConstructorsDialog">
 		<item value="520" key="DIALOG_WIDTH"/>

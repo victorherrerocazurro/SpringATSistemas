@@ -3,7 +3,7 @@
 	<item id="NodeList/GenericTableColumn">
 		<column name="Column Name" visible="true" order="0" width="92"/>
 		<column name="#" visible="true" order="1" width="27"/>
-		<column name="Data Type" visible="true" order="2" width="68"/>
+		<column name="Data Type" visible="true" order="2" width="91"/>
 		<column name="Length" visible="true" order="3" width="51"/>
 		<column name="Scale" visible="false" order="4" width="0"/>
 		<column name="Precision" visible="false" order="5" width="0"/>

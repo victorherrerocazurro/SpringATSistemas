@@ -1,0 +1,109 @@
+package com.cursospring.controlador;
+
+import java.util.List;
+
+import javax.servlet.http.HttpSession;
+import javax.validation.Valid;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.Errors;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.cursospring.modelo.entidades.Usuario;
+import com.cursospring.modelo.servicio.PortalParejasServicio;
+
+//La interface del controlador. no la define una Interface, sino el framework de Spring Mvc
+//a traves de la anotacion @RequestMapping, ya que la interface del Controlaor, es decir la 
+//forma de ejecutarlo es con URLs 
+
+@Controller
+public class ControladorSpringMvc {
+
+	@Autowired
+	private PortalParejasServicio servicio;
+	
+	// GET -> http://......?nombre=&password=
+
+	// POST -> http://...... y adems en el cuerpo se envia nombre=&password=
+
+	// POST + HTTPS -> https://...... y adems en el cuerpo se envia encriptado
+	// (nombre=&password=)
+
+	public void setServicio(PortalParejasServicio servicio) {
+		this.servicio = servicio;
+	}
+
+	@RequestMapping(path = "/login", method = RequestMethod.POST)
+	public String login(@RequestParam String nombre, @RequestParam String password, Model modelo, HttpSession sesion) {
+
+		Usuario usuario = servicio.loguear(nombre, password);
+
+		if (usuario != null) {
+			sesion.setAttribute("usuario", usuario);
+			// Login correcto
+			return "menu";
+		} else {
+			// Login incorrecto
+			modelo.addAttribute("error", "Te has debido de equivocar en algo");
+			return "login";
+		}
+	}
+
+	@RequestMapping(path = "/registro", method = RequestMethod.GET)
+	public String registro(Model modelo){
+		//Preparar los atos que van a ser necesarios en la JSP de registro	
+		modelo.addAttribute("usuario", new Usuario());
+		return "registro";
+	}
+	
+	@RequestMapping(path = "/registro", method = RequestMethod.POST)
+	public String registro(@Valid Usuario usuario, Model modelo, Errors errores) {
+
+		try {
+			if(!errores.hasErrors()){
+				servicio.registrar(usuario);
+	
+				// El registro ha sido correcto
+				return "login";
+			} else {
+				return "registro";
+			}
+
+		} catch (Exception e) {
+			// El registro ha sido incorrecto
+			modelo.addAttribute("error", "Hay problemas en el sistema");
+			return "registro";
+		}
+
+	}
+
+	@RequestMapping("/afines")
+	public String buscarAfines(HttpSession sesion, Model modelo) {
+
+		Usuario elQueEstaLogeado = (Usuario) sesion.getAttribute("usuario");
+
+		List<Usuario> afines = servicio.buscarAfin(elQueEstaLogeado);
+
+		modelo.addAttribute("afines", afines);
+
+		return "menu";
+	}
+
+	@RequestMapping("/ideal")
+	public String buscarIdeal(HttpSession sesion, Model modelo) {
+		
+		Usuario elQueEstaLogeado = (Usuario) sesion.getAttribute("usuario");
+
+		Usuario ideal = servicio.buscarIdeal(elQueEstaLogeado);
+
+		modelo.addAttribute("ideal", ideal);
+
+		return "menu";
+	}
+
+}

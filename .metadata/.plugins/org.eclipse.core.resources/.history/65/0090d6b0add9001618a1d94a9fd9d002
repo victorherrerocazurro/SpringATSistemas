@@ -1,0 +1,19 @@
+package com.cursospring.controlador;
+
+import org.springframework.validation.Errors;
+import org.springframework.validation.Validator;
+
+import com.cursospring.modelo.entidades.Usuario;
+
+public class MiPropioValidador implements Validator {
+
+	public boolean supports(Class<?> arg0) {
+		return arg0.equals(Usuario.class);
+	}
+
+	public void validate(Object arg0, Errors arg1) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

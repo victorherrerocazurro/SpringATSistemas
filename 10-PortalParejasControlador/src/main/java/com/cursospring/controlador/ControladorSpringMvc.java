@@ -3,10 +3,15 @@ package com.cursospring.controlador;
 import java.util.List;
 
 import javax.servlet.http.HttpSession;
+import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.Errors;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.InitBinder;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -24,17 +29,24 @@ public class ControladorSpringMvc {
 	@Autowired
 	private PortalParejasServicio servicio;
 	
+	
+
+	public void setServicio(PortalParejasServicio servicio) {
+		this.servicio = servicio;
+	}
+	
+	@InitBinder
+	public void dataBinding(WebDataBinder binder) {
+		binder.addValidators(new MiPropioValidador());
+	}
+
 	// GET -> http://......?nombre=&password=
 
 	// POST -> http://...... y adems en el cuerpo se envia nombre=&password=
 
 	// POST + HTTPS -> https://...... y adems en el cuerpo se envia encriptado
 	// (nombre=&password=)
-
-	public void setServicio(PortalParejasServicio servicio) {
-		this.servicio = servicio;
-	}
-
+	
 	@RequestMapping(path = "/login", method = RequestMethod.POST)
 	public String login(@RequestParam String nombre, @RequestParam String password, Model modelo, HttpSession sesion) {
 
@@ -51,14 +63,25 @@ public class ControladorSpringMvc {
 		}
 	}
 
+	@RequestMapping(path = "/registro", method = RequestMethod.GET)
+	public String registro(Model modelo){
+		//Preparar los atos que van a ser necesarios en la JSP de registro	
+		modelo.addAttribute("usuario", new Usuario());
+		return "registro";
+	}
+	
 	@RequestMapping(path = "/registro", method = RequestMethod.POST)
-	public String registro(Usuario usuario, Model modelo) {
+	public String registro(@Valid @ModelAttribute Usuario usuario, Errors errores, Model modelo) {
 
 		try {
-			servicio.registrar(usuario);
-
-			// El registro ha sido correcto
-			return "login";
+			if(!errores.hasErrors()){
+				servicio.registrar(usuario);
+	
+				// El registro ha sido correcto
+				return "login";
+			} else {
+				return "registro";
+			}
 
 		} catch (Exception e) {
 			// El registro ha sido incorrecto

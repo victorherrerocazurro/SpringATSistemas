@@ -10,6 +10,7 @@
 </aspect-definition>
 </aop-project>
 <aop-project name="02-FactoriasDeBeansJavaConfig"/>
+<aop-project name="10-PortalParejasWeb"/>
 <aop-project name="05-Data"/>
 <aop-project name="07-Web"/>
 <aop-project name="03-Jdbc"/>
