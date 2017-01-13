@@ -1,0 +1,6 @@
+1484295120658	Rename type 'ReglasAfines'
+1484295135432	Extract interface 'ReglasAfines'
+1484296046588	Extract constant 'MILISEGUNDOS_POR_AÑO'
+1484296132010	Rename type 'ReglasIdeal'
+1484296143398	Extract interface 'ReglasIdeal'
+1484296175736	Move compilation units

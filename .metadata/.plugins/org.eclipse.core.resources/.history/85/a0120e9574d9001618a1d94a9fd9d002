@@ -1,0 +1,57 @@
+package com.cursospring.controlador;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.cursospring.modelo.entidades.Usuario;
+import com.cursospring.modelo.servicio.PortalParejasServicio;
+
+//La interface del controlador. no la define una Interface, sino el framework de Spring Mvc
+//a traves de la anotacion @RequestMapping, ya que la interface del Controlaor, es decir la 
+//forma de ejecutarlo es con URLs 
+
+@Controller
+public class ControladorSpringMvc {
+
+	@Autowired
+	private PortalParejasServicio servicio;
+	
+	//GET -> http://......?nombre=&password=
+	
+	//POST -> http://...... y adems en el cuerpo se envia nombre=&password=
+	
+	//POST + HTTPS -> https://...... y adems en el cuerpo se envia encriptado (nombre=&password=)
+	
+	@RequestMapping(path = "/login", method = RequestMethod.POST)
+	public String login(@RequestParam String nombre, @RequestParam String password){
+		
+		Usuario usuario = servicio.loguear(nombre, password);
+		
+		if(usuario != null){
+			//Login correcto
+			return "menu";
+		} else {
+			//Login incorrecto
+			return "login";
+		}
+	}
+	
+	@RequestMapping("/registro")
+	public String registro(){
+		return null;
+	}
+	
+	@RequestMapping("/afines")
+	public String buscarAfines(){
+		return null;
+	}
+	
+	@RequestMapping("/ideal")
+	public String buscarIdeal(){
+		return null;
+	}
+	
+}

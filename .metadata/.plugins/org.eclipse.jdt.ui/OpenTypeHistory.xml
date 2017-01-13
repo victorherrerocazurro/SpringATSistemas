@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-<typeInfo handle="=01-FactoriaDeBeans/C:\/Program Files\/Java\/jre1.8.0_112\/lib\/rt.jar&lt;javax.sql(DataSource.class[DataSource" modifiers="1537" timestamp="1483955371004"/>
-<typeInfo handle="=01-FactoriaDeBeans/C:\/Program Files\/Java\/jre1.8.0_112\/lib\/rt.jar&lt;java.sql(Driver.class[Driver" modifiers="1537" timestamp="1483955371004"/>
 <typeInfo handle="=04-Orm/src\/main\/java&lt;com.atsistemas.persistencia{ClienteDao.java[ClienteDao" modifiers="513" timestamp="1484047034240"/>
 <typeInfo handle="=07-Web/C:\/Users\/ATSTAFF\/.m2\/repository\/org\/springframework\/spring-web\/4.3.5.RELEASE\/spring-web-4.3.5.RELEASE.jar&lt;org.springframework.web.context(ContextLoaderListener.class[ContextLoaderListener" modifiers="33" timestamp="1484147464819"/>
 <typeInfo handle="=07-Web/C:\/Users\/ATSTAFF\/.m2\/repository\/org\/springframework\/spring-web\/4.3.5.RELEASE\/spring-web-4.3.5.RELEASE.jar&lt;org.springframework.web.context(WebApplicationContext.class[WebApplicationContext" modifiers="1537" timestamp="1484147464819"/>
+<typeInfo handle="=09-Mvc/C:\/Users\/ATSTAFF\/.m2\/repository\/org\/springframework\/spring-webmvc\/4.3.5.RELEASE\/spring-webmvc-4.3.5.RELEASE.jar&lt;org.springframework.web.servlet(DispatcherServlet.class[DispatcherServlet" modifiers="33" timestamp="1484210860855"/>
+<typeInfo handle="=09-Mvc/C:\/Users\/ATSTAFF\/.m2\/repository\/org\/springframework\/spring-webmvc\/4.3.5.RELEASE\/spring-webmvc-4.3.5.RELEASE.jar&lt;org.springframework.web.servlet(HandlerMapping.class[HandlerMapping" modifiers="1537" timestamp="1484210860855"/>
+<typeInfo handle="=09-Mvc/C:\/Users\/ATSTAFF\/.m2\/repository\/org\/springframework\/spring-webmvc\/4.3.5.RELEASE\/spring-webmvc-4.3.5.RELEASE.jar&lt;org.springframework.web.servlet(View.class[View" modifiers="1537" timestamp="1484210860855"/>
+<typeInfo handle="=10-PortalParejasNegocio/C:\/Users\/ATSTAFF\/.m2\/repository\/com\/atsistemas\/10-PortalParejasContatos\/0.0.1-SNAPSHOT\/10-PortalParejasContatos-0.0.1-SNAPSHOT.jar&lt;com.cursospring.modelo.negocio(PortalParejasNegocio.class[PortalParejasNegocio" modifiers="1537" timestamp="1484239257822"/>
+<typeInfo handle="=10-PortalParejasNegocio/C:\/Program Files\/Java\/jdk1.8.0_112\/jre\/lib\/rt.jar&lt;javax.sound.sampled(Port.class[Port" modifiers="1537" timestamp="1483955255368"/>
 </typeInfoHistroy>

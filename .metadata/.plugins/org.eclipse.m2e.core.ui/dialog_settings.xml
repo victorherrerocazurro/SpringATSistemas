@@ -7,6 +7,10 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="10-PortalParejasNegocio"/>
+			<item value="10-"/>
+			<item value="10-PortalParejasContatos"/>
+			<item value="10-PortalParejasEntidades"/>
 			<item value="07-Web"/>
 			<item value="06-Aop"/>
 			<item value="05-Data"/>
@@ -69,6 +73,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="09-Mvc"/>
 			<item value="08-WebTemporal"/>
 		</list>
 		<list key="version">
@@ -77,6 +82,8 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasContatos"/>
+			<item value="C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasEntidades"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

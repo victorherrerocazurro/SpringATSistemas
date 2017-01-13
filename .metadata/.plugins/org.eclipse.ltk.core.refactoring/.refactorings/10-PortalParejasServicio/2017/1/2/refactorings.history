@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.cursospring.modelo.servicio.ServicioImpl&apos; to &apos;PortalParejasServicioImpl&apos;&#x0D;&#x0A;- Original project: &apos;10-PortalParejasServicio&apos;&#x0D;&#x0A;- Original element: &apos;com.cursospring.modelo.servicio.ServicioImpl&apos;&#x0D;&#x0A;- Renamed element: &apos;com.cursospring.modelo.servicio.PortalParejasServicioImpl&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ServicioImpl&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;com.cursospring.modelo.servicio{ServicioImpl.java[ServicioImpl" matchStrategy="1" name="PortalParejasServicioImpl" qualified="false" references="true" similarDeclarations="false" stamp="1484297425634" textual="false" version="1.0"/>
+</session>

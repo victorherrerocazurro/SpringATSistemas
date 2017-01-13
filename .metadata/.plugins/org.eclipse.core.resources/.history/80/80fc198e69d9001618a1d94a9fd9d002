@@ -1,0 +1,15 @@
+package com.cursospring.modelo.negocio;
+
+import com.cursospring.modelo.entidades.Usuario;
+
+public class BasicasReglasAfines implements ReglasAfines {
+
+	/* (non-Javadoc)
+	 * @see com.cursospring.modelo.negocio.ReglasAfines#sonAfines(com.cursospring.modelo.entidades.Usuario, com.cursospring.modelo.entidades.Usuario)
+	 */
+	public boolean sonAfines(Usuario elQueBusca, Usuario candidato) {
+		// TODO Auto-generated method stub
+		return !elQueBusca.equals(candidato) && Math.abs(elQueBusca.getAltura() - candidato.getAltura()) < 0.50;
+	}
+
+}

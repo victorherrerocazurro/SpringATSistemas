@@ -7,7 +7,7 @@
 	<item value="true" key="Comments"/>
 	<item value="false" key="TypeHierarchyViewPart.linkeditors"/>
 	<item value="false" key="InstanceOf"/>
-	<item value="2" key="TypeHierarchyViewPart.hierarchyview"/>
+	<item value="1" key="TypeHierarchyViewPart.hierarchyview"/>
 	<section name="org.eclipse.ltk.ui.refactoring.settings">
 		<item value="false" key="renameSubpackages"/>
 		<item value="false" key="updateQualifiedNames"/>
@@ -51,7 +51,7 @@
 	</section>
 	<section name="NewClassWizardPage">
 		<item value="false" key="create_constructor"/>
-		<item value="false" key="create_unimplemented"/>
+		<item value="true" key="create_unimplemented"/>
 	</section>
 	<section name="OptionalMessageDialog.hide.">
 		<item value="true" key="org.eclipse.jdt.ui.typecomment.deprecated"/>

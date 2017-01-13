@@ -5,7 +5,26 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2017-01-10T19:58:03Z</updated>
+  <updated>2017-01-12T19:32:52Z</updated>
+  <entry>
+    <title>Spring Cloud Camden.SR4 Is Available</title>
+    <link rel="alternate" href="https://spring.io/blog/2017/01/12/spring-cloud-camden-sr4-is-available" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Ryan Baxter</name>
+    </author>
+    <id>tag:spring.io,2017-01-12:2782</id>
+    <updated>2017-01-12T19:32:52Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the team, I am pleased to announce that Camden Service Release 4 of &lt;a href="http://cloud.spring.io"&gt;Spring Cloud&lt;/a&gt; is available today. The release can be found in our &lt;a href="http://repo.spring.io/release"&gt;Spring Release repository&lt;/a&gt; and &lt;a href="http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22spring-cloud-dependencies%22"&gt;Maven Central&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This release includes primarily bug fixes. Release notes can be found on our &lt;a href="https://github.com/spring-projects/spring-cloud/wiki"&gt;wiki&lt;/a&gt;.&lt;/p&gt;&lt;h4&gt;&lt;a href="#the-following-modules-were-updated-as-part-of-camden-sr4" class="anchor" name="the-following-modules-were-updated-as-part-of-camden-sr4"&gt;&lt;/a&gt;The following modules were updated as part of Camden.SR4:&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Spring Cloud Commons &lt;a href="https://github.com/spring-cloud/spring-cloud-commons/milestone/21?closed=1"&gt;1.1.7.RELEASE&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Cloud Netflix &lt;a href="https://github.com/spring-cloud/spring-cloud-netflix/milestone/35?closed=1"&gt;1.2.4.RELEASE&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Cloud Sleuth &lt;a href="https://github.com/spring-cloud/spring-cloud-sleuth/milestone/20?closed=1"&gt;1.1.1.RELEASE&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Cloud Contract &lt;a href="https://github.com/spring-cloud/spring-cloud-contract/milestone/7?closed=1"&gt;1.0.3.RELEASE&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And, as always, we welcome feedback: either on &lt;a href="https://github.com/spring-cloud"&gt;GitHub&lt;/a&gt;, on &lt;a href="https://gitter.im/spring-cloud/spring-cloud"&gt;Gitter&lt;/a&gt;, on &lt;a href="http://stackoverflow.com/questions/tagged/spring-cloud"&gt;Stack Overflow&lt;/a&gt;, or on &lt;a href="https://twitter.com/SpringCloud"&gt;Twitter&lt;/a&gt;.&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Spring Cloud Task 1.1.2.RELEASE is now available</title>
     <link rel="alternate" href="https://spring.io/blog/2017/01/10/spring-cloud-task-1-1-2-release-is-now-available" />
@@ -619,18 +638,5 @@ ${include(&amp;quot;footer&amp;quot;)}&#xD;
     <content type="html">&lt;p&gt;Recorded at SpringOne Platform 2016.&lt;br/&gt;Speaker: Christoph Strobl&lt;br/&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/next-level-redis-with-spring"&gt;http://www.slideshare.net/SpringCentral/next-level-redis-with-spring&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Redis is one of the most popular Open Source Key Value Stores these days. Spring Data Redis Lead Christoph Strobl takes you on a tour through high availability and cluster scenarios. He explains Object Hash Mapping and Secondary Indexes as well as the Spring Data Repository abstraction that let’s you seamlessly interact with Redis.&lt;/p&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/VvK-uLWDHFo" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
-  </entry>
-  <entry>
-    <title>SpringOne Platform 2016 Replay: Java Buildpack Developer Enhancements</title>
-    <link rel="alternate" href="https://spring.io/blog/2017/01/03/springone-platform-2016-replay-java-buildpack-developer-enhancements" />
-    <category term="news" label="News and Events" />
-    <author>
-      <name>Pieter Humphrey</name>
-    </author>
-    <id>tag:spring.io,2017-01-05:2765</id>
-    <updated>2017-01-03T20:22:00Z</updated>
-    <content type="html">&lt;p&gt;Recorded at SpringOne Platform 2016.&lt;br/&gt;Speaker: Ben Hale&lt;br/&gt;Slides: &lt;a href="http://www.slideshare.net/Pivotal/java-buildpack-developer-enhancements"&gt;http://www.slideshare.net/Pivotal/java-buildpack-developer-enhancements&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Over the years, the Java Experience team has worked hard to ensure that Cloud Foundry was the best place to run Java applications in the cloud. As that support has matured we’ve turned our attention to the developer experience. In this session, you’ll hear from the lead developer of the buildpack about the new support for JMX access, debugging, and profiling. Rounding out this session will be a short tour of other production features added recently.&lt;/p&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/xzLGdSsngoA" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content>
   </entry>
 </feed>

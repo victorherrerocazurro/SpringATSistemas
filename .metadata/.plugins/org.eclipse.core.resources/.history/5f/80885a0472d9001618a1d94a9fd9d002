@@ -1,0 +1,14 @@
+package com.cursospring.controlador;
+
+import org.springframework.stereotype.Controller;
+
+//La interface del controlador. no la define una Interface, sino el framework de Spring Mvc
+//a traves de la anotacion @RequestMapping, ya que la interface del Controlaor, es decir la 
+//forma de ejecutarlo es con URLs 
+
+@Controller
+public class ControladorSpringMvc {
+
+	
+	
+}

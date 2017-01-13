@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;afines&apos; in &apos;com.cursospring.controlador.ControladorSpringMvc.buscarIdeal(...)&apos; to &apos;ideal&apos;&#x0D;&#x0A;- Original project: &apos;10-PortalParejasControlador&apos;&#x0D;&#x0A;- Original element: &apos;com.cursospring.controlador.ControladorSpringMvc.buscarIdeal(HttpSession, Model).afines&apos;&#x0D;&#x0A;- Renamed element: &apos;afines&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;afines&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src\/main\/java&lt;com.cursospring.controlador{ControladorSpringMvc.java[ControladorSpringMvc~buscarIdeal~QHttpSession;~QModel;@afines!2490!2545!2498!2503!QUsuario;!0!false" name="ideal" references="true" stamp="1484302975828" version="1.0"/>
+</session>

@@ -1,0 +1,5 @@
+package com.cursospring.modelo.servicio;
+
+public class ServicioImpl implements PortalParejasServicio{
+
+}

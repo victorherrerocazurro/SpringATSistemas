@@ -1,0 +1,16 @@
+package com.cursospring.modelo.negocio;
+
+import com.cursospring.modelo.entidades.Usuario;
+
+public class ReglasIdeal {
+
+	private static final int MILISEGUNDOS_POR_AÑO = 365*24*60*60*1000;
+
+	public boolean sonIdeales(Usuario elQueBusca, Usuario candidato) {
+		return !elQueBusca.equals(candidato) 
+				&& !elQueBusca.getGenero().equals(candidato.getGenero())
+				&& Math.abs(elQueBusca.getAltura() - candidato.getAltura()) < 0.10 
+				&& Math.abs(elQueBusca.getFechaNacimiento().getTime() - candidato.getFechaNacimiento().getTime()) < (5*MILISEGUNDOS_POR_AÑO);
+	}
+
+}

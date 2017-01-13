@@ -1,0 +1,12 @@
+package com.cursospring.modelo.negocio;
+
+import com.cursospring.modelo.entidades.Usuario;
+
+public class ReglasAfines {
+
+	public boolean sonAfines(Usuario elQueBusca, Usuario candidato) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}
