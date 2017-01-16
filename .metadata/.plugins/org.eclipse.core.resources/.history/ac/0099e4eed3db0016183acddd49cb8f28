@@ -1,0 +1,38 @@
+package com.cursospring.rest.servicio;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+@Controller
+// Incluimos en el path el recurso con el que se opera
+@RequestMapping("/Cliente")
+public class ClienteServicioRest {
+
+	@RequestMapping(method = RequestMethod.GET)
+	public void consulta() {
+
+	}
+	
+	@RequestMapping(path="/{id}", method = RequestMethod.GET)
+	public void consultaPorId(@PathVariable int id) {
+
+	}
+
+	@RequestMapping(method = RequestMethod.POST)
+	public void creacion() {
+
+	}
+
+	@RequestMapping(method = RequestMethod.PUT)
+	public void actualizacion() {
+
+	}
+
+	@RequestMapping(method = RequestMethod.DELETE)
+	public void borrado() {
+
+	}
+
+}

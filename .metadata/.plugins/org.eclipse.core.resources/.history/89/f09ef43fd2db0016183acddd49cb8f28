@@ -1,0 +1,5 @@
+package com.cursospring.rest.servicio;
+
+public class ServicioRest {
+
+}

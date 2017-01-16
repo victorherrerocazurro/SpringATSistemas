@@ -1,8 +1,4 @@
 #Tomcat publish data
-#Fri Jan 13 17:45:07 CET 2017
-org.eclipse.jst.j2ee.server\:10-PortalParejasControlador=C\:\\Users\\ATSTAFF\\Desktop\\apache-tomcat-8.5.9\\wtpwebapps\\10-PortalParejasWeb\\WEB-INF\\lib\\10-PortalParejasControlador-0.0.1-SNAPSHOT.jar
-org.eclipse.jst.jee.server\:09-Mvc=C\:\\Users\\ATSTAFF\\Desktop\\apache-tomcat-8.5.9\\wtpwebapps\\09-Mvc
-org.eclipse.jst.j2ee.server\:10-PortalParejasContatos=C\:\\Users\\ATSTAFF\\Desktop\\apache-tomcat-8.5.9\\wtpwebapps\\10-PortalParejasWeb\\WEB-INF\\lib\\10-PortalParejasContatos-0.0.1-SNAPSHOT.jar
-org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\ATSTAFF\\.m2\\repository\\org\\springframework\\spring-web\\4.3.5.RELEASE\\spring-web-4.3.5.RELEASE.jar=C\:\\Users\\ATSTAFF\\Desktop\\apache-tomcat-8.5.9\\wtpwebapps\\10-PortalParejasWeb\\WEB-INF\\lib\\spring-web-4.3.5.RELEASE.jar
-org.eclipse.jst.jee.server\:10-PortalParejasWeb=C\:\\Users\\ATSTAFF\\Desktop\\apache-tomcat-8.5.9\\wtpwebapps\\10-PortalParejasWeb
-org.eclipse.jst.j2ee.server\:10-PortalParejasEntidades=C\:\\Users\\ATSTAFF\\Desktop\\apache-tomcat-8.5.9\\wtpwebapps\\10-PortalParejasWeb\\WEB-INF\\lib\\10-PortalParejasEntidades-0.0.1-SNAPSHOT.jar
+#Mon Jan 16 13:38:21 CET 2017
+org.eclipse.jst.jee.server\:11-Rest=C\:\\Users\\ATSTAFF\\Desktop\\apache-tomcat-8.5.9\\wtpwebapps\\11-Rest
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\ATSTAFF\\.m2\\repository\\org\\springframework\\spring-web\\4.3.5.RELEASE\\spring-web-4.3.5.RELEASE.jar=C\:\\Users\\ATSTAFF\\Desktop\\apache-tomcat-8.5.9\\wtpwebapps\\11-Rest\\WEB-INF\\lib\\spring-web-4.3.5.RELEASE.jar

@@ -1,0 +1,73 @@
+package com.cursospring.rest.servicio;
+
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
+import org.springframework.util.MultiValueMap;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.cursospring.entidades.Cliente;
+
+@Controller
+// Incluimos en el path el recurso con el que se opera
+@RequestMapping("/Cliente")
+public class ClienteServicioRest {
+
+	//http://..../rest/Cliente (GET)
+	//http://..../rest/Cliente?nombre=victor (GET)
+	@RequestMapping(method = RequestMethod.GET)
+	public List<Cliente> consulta(@RequestParam String nombre) {
+		return null;
+	}
+	
+	//http://..../rest/Cliente/1 (GET) Accept="application/xml" o Accept="application/json"
+	@RequestMapping(path="/{id}", method = RequestMethod.GET, produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
+	public Cliente consultaPorId(@PathVariable int id) {
+		return null;
+	}
+
+	//http://..../rest/Cliente (POST) Content-Type="application/json"
+	@RequestMapping(method = RequestMethod.POST, consumes= MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<Cliente> creacion(@RequestBody Cliente cliente, HttpServletRequest request) throws Exception {
+		//TODO invocar la logica de insercion de Cliente
+		
+		//Establecer el Location, para ello, necesitamos conocer la PK que se ha asciado al recurso.
+		
+		//URL (http://..../rest/Cliente/) + (Cliente.getId());
+		
+		
+		
+		
+		HttpHeaders headers = new HttpHeaders();
+		
+		headers.setLocation(new URI(request.getLocalAddr().concat("/").concat(String.valueOf(cliente.getId()))));
+		
+		return new ResponseEntity<>(headers, HttpStatus.CREATED);
+		
+	}
+
+	//http://..../rest/Cliente (PUT)
+	@RequestMapping(method = RequestMethod.PUT)
+	public void actualizacion() {
+
+	}
+
+	//http://..../rest/Cliente (DELETE)
+	@RequestMapping(method = RequestMethod.DELETE)
+	public void borrado() {
+
+	}
+
+}
