@@ -1,0 +1,5 @@
+package com.cursospring.config;
+
+public class ConfiguracionRest {
+
+}

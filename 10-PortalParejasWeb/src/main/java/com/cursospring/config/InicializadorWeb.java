@@ -13,7 +13,8 @@ public class InicializadorWeb implements WebApplicationInitializer {
 	@Override
 	public void onStartup(ServletContext servletContext) throws ServletException {
 		AnnotationConfigWebApplicationContext springContext = new AnnotationConfigWebApplicationContext();
-		springContext.scan("com.cursospring.config");
+		springContext.register(ConfiguracionRest.class);//Para aplicacion que tira de la persistencia como servicio Rest (Microservicios)
+		//springContext.register(Configuracion.class);//Para aplicacion MVC normal
 		
 		ServletRegistration servlet = servletContext.addServlet("spring", new DispatcherServlet(springContext));
 		

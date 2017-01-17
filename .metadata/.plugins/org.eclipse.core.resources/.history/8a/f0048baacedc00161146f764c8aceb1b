@@ -1,0 +1,19 @@
+package com.cursospring.modelo.negocio;
+
+import java.util.List;
+
+import com.cursospring.modelo.entidades.Usuario;
+
+public class PortalParejasNegocioClienteServicioRestPersistencia implements PortalParejasNegocio{
+
+	public List<Usuario> buscarUsuariosAfinesAUsuario(Usuario elQueBusca) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Usuario buscarIdeal(Usuario elQueBusca) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

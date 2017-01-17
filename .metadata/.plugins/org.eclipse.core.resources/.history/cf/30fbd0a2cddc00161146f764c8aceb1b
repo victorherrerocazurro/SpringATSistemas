@@ -1,0 +1,5 @@
+package com.cursospring.modelo.negocio;
+
+public class PortalParejasNegocioClienteServicioRestPersistencia {
+
+}

@@ -1,0 +1,33 @@
+package com.cursospring.modelo.servicio;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.cursospring.modelo.entidades.Usuario;
+import com.cursospring.modelo.negocio.PortalParejasNegocio;
+
+public class PortalParejasServicioClienteServicioRestPersistencia implements PortalParejasServicio {
+
+	@Autowired
+	private PortalParejasNegocio negocio;
+	
+	public void registrar(Usuario usuario) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public Usuario loguear(String nombre, String password) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public List<Usuario> buscarAfin(Usuario elQueBusca) {
+		return negocio.buscarUsuariosAfinesAUsuario(elQueBusca);
+	}
+
+	public Usuario buscarIdeal(Usuario elQueBusca) {
+		return negocio.buscarIdeal(elQueBusca);
+	}
+
+}

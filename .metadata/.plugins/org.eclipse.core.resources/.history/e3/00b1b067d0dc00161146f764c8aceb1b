@@ -1,0 +1,29 @@
+package com.cursospring.modelo.servicio;
+
+import java.util.List;
+
+import com.cursospring.modelo.entidades.Usuario;
+
+public class PortalParejasServicioClienteServicioRestPersistencia implements PortalParejasServicio {
+
+	public void registrar(Usuario usuario) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public Usuario loguear(String nombre, String password) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public List<Usuario> buscarAfin(Usuario elQueBusca) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Usuario buscarIdeal(Usuario elQuebusca) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -24,6 +24,11 @@
 	<dependencies>
 		<dependency>
 			<groupId>com.atsistemas</groupId>
+			<artifactId>10-PortalParejasNegocioServicioClientePersistenciaRest</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<!-- <dependency>
+			<groupId>com.atsistemas</groupId>
 			<artifactId>10-PortalParejasNegocio</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
@@ -31,7 +36,7 @@
 			<groupId>com.atsistemas</groupId>
 			<artifactId>10-PortalParejasServicio</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
+		</dependency>-->
 		<dependency>
 			<groupId>com.atsistemas</groupId>
 			<artifactId>10-PortalParejasControlador</artifactId>
@@ -65,6 +70,11 @@
 			<groupId>org.glassfish.web</groupId>
 			<artifactId>jstl-impl</artifactId>
 			<version>1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.8.5</version>
 		</dependency>
 	</dependencies>
 </project>

@@ -7,6 +7,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="10-PortalParejasNegocioServicioClientePersistenciaRest"/>
 			<item value="10-PortalParejasControlador"/>
 			<item value="10-PortalParejasServicio"/>
 			<item value="10-PortalParejasNegocio"/>
@@ -76,6 +77,8 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="10-PortalParejasPersistenciaRest"/>
+			<item value="12-SimpsonsRest"/>
 			<item value="11-Rest"/>
 			<item value="10-PortalParejasWeb"/>
 			<item value="10-PortalParejasPresentacionWeb"/>
@@ -88,6 +91,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasWeb"/>
 			<item value="C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasNegocio"/>
 			<item value="C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasContatos"/>
 			<item value="C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasEntidades"/>

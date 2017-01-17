@@ -1,0 +1,39 @@
+package com.atsistemas.rest;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.cursospring.modelo.entidades.Usuario;
+import com.cursospring.modelo.persistencia.UsuarioDao;
+
+@RestController
+@RequestMapping("/Usuarios")
+public class UsuariosServicioRest {
+
+	@Autowired
+	private UsuarioDao dao;
+
+	@RequestMapping(method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	public List<Usuario> consultaTodos() {
+		return dao.findAll();
+	}
+
+	@RequestMapping(method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
+	public Usuario consultaPorNombreYPassword(@RequestParam String nombre, @RequestParam String password) {
+		return dao.findByNombreAndPassword(nombre, password);
+	}
+	
+	@RequestMapping(method = RequestMethod.POST)
+	public Usuario crear(@RequestBody Usuario usuario) {
+		dao.saveAndFlush(usuario);
+		return usuario;
+	}
+
+}

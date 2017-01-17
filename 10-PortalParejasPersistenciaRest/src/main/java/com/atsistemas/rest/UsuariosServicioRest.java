@@ -1,25 +1,48 @@
 package com.atsistemas.rest;
 
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.cursospring.modelo.entidades.Usuario;
+import com.cursospring.modelo.persistencia.UsuarioDao;
 
 @RestController
 @RequestMapping("/Usuarios")
 public class UsuariosServicioRest {
 
+	@Autowired
+	private UsuarioDao dao;
+
+	public void setDao(UsuarioDao dao) {
+		this.dao = dao;
+	}
+
+	// Restful
 	@RequestMapping(method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-	public void consultaTodos() {
-
+	public ResponseEntity<List<Usuario>> consultaTodos() {
+		return new ResponseEntity<List<Usuario>>(dao.findAll(), HttpStatus.OK);
 	}
 
-	public void consultaPorNombreYPassword() {
-
+	// Restful
+	@RequestMapping(method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<Usuario> crear(@RequestBody Usuario usuario) {
+		dao.saveAndFlush(usuario);
+		return new ResponseEntity<>(HttpStatus.CREATED);
 	}
 
-	public void crear() {
-
+	// Rest, pero no Restful
+	@RequestMapping(path="/ConsultaPorNombreYPassword", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<Usuario> consultaPorNombreYPassword(@RequestParam String nombre, @RequestParam String password) {
+		return new ResponseEntity<Usuario>(dao.findByNombreAndPassword(nombre, password), HttpStatus.OK);
 	}
 
 }

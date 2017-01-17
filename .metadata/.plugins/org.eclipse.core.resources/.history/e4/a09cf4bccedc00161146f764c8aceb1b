@@ -1,0 +1,27 @@
+package com.cursospring.modelo.negocio;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.cursospring.modelo.entidades.Usuario;
+
+public class PortalParejasNegocioClienteServicioRestPersistencia implements PortalParejasNegocio{
+
+	@Autowired
+	private ReglasAfines reglasAfines;
+	
+	@Autowired
+	private ReglasIdeal reglasIdeal;
+	
+	public List<Usuario> buscarUsuariosAfinesAUsuario(Usuario elQueBusca) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Usuario buscarIdeal(Usuario elQueBusca) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

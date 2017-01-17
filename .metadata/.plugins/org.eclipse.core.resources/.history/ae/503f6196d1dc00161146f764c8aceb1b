@@ -1,0 +1,42 @@
+package com.cursospring.modelo.servicio;
+
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.client.RestClientException;
+import org.springframework.web.client.RestTemplate;
+
+import com.cursospring.modelo.entidades.Usuario;
+import com.cursospring.modelo.negocio.PortalParejasNegocio;
+
+public class PortalParejasServicioClienteServicioRestPersistencia implements PortalParejasServicio {
+
+	@Autowired
+	private PortalParejasNegocio negocio;
+	
+	public void registrar(Usuario usuario) {
+		try {
+			new RestTemplate().postForEntity(new URI(""), usuario, Usuario.class);
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw new RuntimeException(e);
+		}
+
+	}
+
+	public Usuario loguear(String nombre, String password) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public List<Usuario> buscarAfin(Usuario elQueBusca) {
+		return negocio.buscarUsuariosAfinesAUsuario(elQueBusca);
+	}
+
+	public Usuario buscarIdeal(Usuario elQueBusca) {
+		return negocio.buscarIdeal(elQueBusca);
+	}
+
+}
