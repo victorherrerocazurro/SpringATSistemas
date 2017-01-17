@@ -1,0 +1,47 @@
+package com.simpson.rest;
+
+import java.util.List;
+
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/characters")
+public class CharactersRestService {
+
+	//http://localhost:8080/12-SimpsonsRest/rest/characters/hommer
+	
+	@RequestMapping(path="/{id}", method=RequestMethod.GET)
+	public com.simpson.entidades.Character consultaPorId(@PathVariable String id){
+		return null;
+	}
+	
+	//http://localhost:8080/12-SimpsonsRest/rest/characters
+	
+	@RequestMapping(method=RequestMethod.GET)
+	public List<Character> consultaTodos(){
+		return null;
+	}
+	
+	//http://localhost:8080/12-SimpsonsRest/rest/characters/hommer/brothers
+	@RequestMapping(path="/{id}/brothers", method= RequestMethod.GET, produces= MediaType.APPLICATION_JSON_VALUE)
+	public List<Character> consultTodosaHermanosDePersonaje(@PathVariable String id){
+		return null;
+	}
+	
+	
+	//http://localhost:8080/12-SimpsonsRest/rest/characters/hommer/brothers/herb
+	@RequestMapping(path="/{id}/brothers/{idHermano}", method= RequestMethod.GET, produces= MediaType.APPLICATION_JSON_VALUE)
+	public Character consultaUnHermanoDePersonaje(@PathVariable String id, @PathVariable String idHermano){
+		return null;
+	}
+	
+	@RequestMapping(path="/{id}/hijos/{idHijo}", method= RequestMethod.GET, produces= MediaType.APPLICATION_JSON_VALUE)
+	public Character consultaUnHijoDePersonaje(@PathVariable String id, @PathVariable String idHijo){
+		return null;
+	}
+	
+}

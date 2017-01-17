@@ -1,0 +1,71 @@
+package com.simpson.rest;
+
+import java.util.List;
+
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/characters")
+public class CharactersRestService {
+
+	// http://localhost:8080/12-SimpsonsRest/rest/characters
+
+	@RequestMapping(method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	public List<com.simpson.entidades.Character> consultaTodos() {
+		return null;
+	}
+
+	// http://localhost:8080/12-SimpsonsRest/rest/characters/hommer
+
+	@RequestMapping(path = "/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	public com.simpson.entidades.Character consultaUnPersojae(@PathVariable String id) {
+		return null;
+	}
+
+	// http://localhost:8080/12-SimpsonsRest/rest/characters/hommer/brothers
+
+	@RequestMapping(path = "/{id}/brothers", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	public List<com.simpson.entidades.Character> consultTodosaHermanosDePersonaje(@PathVariable String id) {
+		return null;
+	}
+
+	// http://localhost:8080/12-SimpsonsRest/rest/characters/hommer/brothers/herb
+
+	@RequestMapping(path = "/{id}/brothers/{idHermano}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	public com.simpson.entidades.Character consultaUnHermanoDePersonaje(@PathVariable String id,
+			@PathVariable String idHermano) {
+		return null;
+	}
+
+	// http://localhost:8080/12-SimpsonsRest/rest/characters/hommer/childs
+
+	@RequestMapping(path = "/{id}/childs", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	public List<com.simpson.entidades.Character> consultTodosaHijosDePersonaje(@PathVariable String id) {
+		return null;
+	}
+
+	// http://localhost:8080/12-SimpsonsRest/rest/characters/hommer/childs/bart
+
+	@RequestMapping(path = "/{id}/childs/{idHijo}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	public com.simpson.entidades.Character consultaUnHijoDePersonaje(@PathVariable String id,
+			@PathVariable String idHijo) {
+		return null;
+	}
+
+	// http://localhost:8080/12-SimpsonsRest/rest/characters/hommer/father
+	@RequestMapping(path = "/{id}/father", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	public com.simpson.entidades.Character consultaPadreDePersonaje(@PathVariable String id) {
+		return null;
+	}
+	
+	// http://localhost:8080/12-SimpsonsRest/rest/characters/hommer/grandfather
+		@RequestMapping(path = "/{id}/grandfather", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+		public com.simpson.entidades.Character consultaAbueloDePersonaje(@PathVariable String id) {
+			return null;
+		}
+
+}

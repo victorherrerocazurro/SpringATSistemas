@@ -1,4 +1,4 @@
 #Tomcat publish data
-#Mon Jan 16 13:38:21 CET 2017
-org.eclipse.jst.jee.server\:11-Rest=C\:\\Users\\ATSTAFF\\Desktop\\apache-tomcat-8.5.9\\wtpwebapps\\11-Rest
-org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\ATSTAFF\\.m2\\repository\\org\\springframework\\spring-web\\4.3.5.RELEASE\\spring-web-4.3.5.RELEASE.jar=C\:\\Users\\ATSTAFF\\Desktop\\apache-tomcat-8.5.9\\wtpwebapps\\11-Rest\\WEB-INF\\lib\\spring-web-4.3.5.RELEASE.jar
+#Tue Jan 17 11:19:56 CET 2017
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\ATSTAFF\\.m2\\repository\\org\\springframework\\spring-web\\4.3.5.RELEASE\\spring-web-4.3.5.RELEASE.jar=C\:\\Users\\ATSTAFF\\Desktop\\apache-tomcat-8.5.9\\wtpwebapps\\12-SimpsonsRest\\WEB-INF\\lib\\spring-web-4.3.5.RELEASE.jar
+org.eclipse.jst.jee.server\:12-SimpsonsRest=C\:\\Users\\ATSTAFF\\Desktop\\apache-tomcat-8.5.9\\wtpwebapps\\12-SimpsonsRest

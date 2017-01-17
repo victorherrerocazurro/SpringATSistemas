@@ -43,14 +43,14 @@ public class ClienteServicioRest {
 	}
 	
 	//http://..../rest/Cliente/1 (GET) Accept="application/xml" o Accept="application/json"
-	@RequestMapping(path="/{id}", method = RequestMethod.GET, produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
+	@RequestMapping(path="/{id}", method = RequestMethod.GET, produces = {MediaType.APPLICATION_JSON_VALUE})
 	public Cliente consultaPorId(@PathVariable int id) {
 		return new Cliente(id, "Victor");
 	}
 
 	//http://..../rest/Cliente (POST) Content-Type="application/json"
 	@RequestMapping(method = RequestMethod.POST, consumes= MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<Cliente> creacion(@RequestBody Cliente cliente, HttpServletRequest request) throws Exception {
+	public ResponseEntity<List<Cliente>> creacion(@RequestBody Cliente cliente, HttpServletRequest request) throws Exception {
 		//TODO invocar la logica de insercion de Cliente
 		
 		//Establecer el Location, para ello, necesitamos conocer la PK que se ha asciado al recurso.
@@ -61,7 +61,9 @@ public class ClienteServicioRest {
 		
 		headers.setLocation(new URI(request.getRequestURL().append("/").append(cliente.getId()).toString()));
 		
-		return new ResponseEntity<>(headers, HttpStatus.CREATED);
+		ArrayList<Cliente> lista = new ArrayList<>();lista.add(cliente);
+		
+		return new ResponseEntity<>(lista, headers, HttpStatus.CREATED);
 		
 	}
 

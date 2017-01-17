@@ -1,0 +1,5 @@
+package com.simpson.entidades;
+
+public class Character {
+
+}
