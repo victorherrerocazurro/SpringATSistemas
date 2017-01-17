@@ -1,0 +1,11 @@
+package com.cursospring.rest.servicio;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+//Incluimos en el path el recurso con el que se opera
+@RequestMapping("/Cliente")
+public class ServicioRest {
+
+}

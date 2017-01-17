@@ -47,6 +47,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\ATSTAFF\Desktop"/>
 			<item value="C:\Users\ATSTAFF\Desktop\workspace"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -75,6 +76,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="11-Rest"/>
 			<item value="10-PortalParejasWeb"/>
 			<item value="10-PortalParejasPresentacionWeb"/>
 			<item value="09-Mvc"/>

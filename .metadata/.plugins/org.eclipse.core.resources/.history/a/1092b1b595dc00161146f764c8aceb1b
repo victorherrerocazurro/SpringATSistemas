@@ -1,0 +1,16 @@
+package com.simpson.rest;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/characters")
+public class CharactersRestService {
+
+	public List<Character> consulta(String nombre){
+		return null;
+	}
+	
+}

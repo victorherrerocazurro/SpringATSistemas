@@ -1,0 +1,27 @@
+package com.simpson;
+
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.List;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.client.RestClientException;
+import org.springframework.web.client.RestTemplate;
+
+import com.simpson.entidades.Character;
+
+public class ClienteStandaloneCharacterRestService {
+
+	public static void main(String[] args) throws RestClientException, URISyntaxException {
+		RestTemplate restTemplate = new RestTemplate();
+		
+		ResponseEntity<Character> entidad = restTemplate.getForEntity(new URI("http://localhost:8080/12-SimpsonsRest/rest/characters"), List.class);
+		
+		Character character = entidad.getBody();
+		
+		
+		
+
+	}
+
+}
