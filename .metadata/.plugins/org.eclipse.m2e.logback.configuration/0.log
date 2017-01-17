@@ -8964,3 +8964,151 @@ org.eclipse.core.runtime.CoreException: Launch configuration LanzadorProperties 
 2017-01-17 12:48:16,099 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2017-01-17 12:48:16,102 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2017-01-17 12:48:16,110 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-17 12:54:38,430 [Worker-22] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.atsistemas:10-PortalParejasControlador:0.0.1-SNAPSHOT @ C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasControlador\pom.xml.
+2017-01-17 12:54:39,106 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 12:54:39,115 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-17 12:54:39,119 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 12:54:39,124 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-17 12:54:42,638 [Worker-40] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.atsistemas:10-PortalParejasContatos:0.0.1-SNAPSHOT @ C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasContatos\pom.xml.
+2017-01-17 12:54:42,744 [Worker-40] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.atsistemas:10-PortalParejasServicio:0.0.1-SNAPSHOT @ C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasServicio\pom.xml.
+2017-01-17 12:54:42,804 [Worker-40] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.atsistemas:10-PortalParejasNegocio:0.0.1-SNAPSHOT @ C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasNegocio\pom.xml.
+2017-01-17 12:54:42,862 [Worker-40] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.atsistemas:10-PortalParejasControlador:0.0.1-SNAPSHOT @ C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasControlador\pom.xml.
+2017-01-17 12:54:43,753 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 12:54:43,762 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-17 12:54:43,766 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 12:54:43,771 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-17 12:54:43,967 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 12:54:43,979 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-17 12:54:43,981 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 12:54:43,988 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-17 12:54:44,102 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 12:54:44,109 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-17 12:54:44,110 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 12:54:44,117 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-17 12:54:44,249 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 12:54:44,256 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-17 12:54:44,258 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 12:54:44,265 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-17 12:55:33,832 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cursospring:10-PortalParejasWeb:0.0.1-SNAPSHOT @ C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasWeb\pom.xml.
+2017-01-17 12:55:37,807 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 12:55:37,814 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasWeb\src\main\resources
+2017-01-17 12:55:37,815 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 12:55:37,826 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasWeb\src\test\resources
+2017-01-17 13:57:43,659 [Worker-40] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cursospring:10-PortalParejasPersistenciaRest:0.0.1-SNAPSHOT @ C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\pom.xml.
+2017-01-17 13:57:44,171 [Worker-40] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /10-PortalParejasPersistenciaRest/src/main/java
+2017-01-17 13:57:44,176 [Worker-40] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /10-PortalParejasPersistenciaRest/src/test/java
+2017-01-17 13:57:44,496 [Worker-40] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-01-17 13:57:44,571 [Worker-40] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cursospring:10-PortalParejasPersistenciaRest:0.0.1-SNAPSHOT @ C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\pom.xml.
+2017-01-17 13:57:44,738 [Worker-40] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /10-PortalParejasPersistenciaRest/src/main/java
+2017-01-17 13:57:44,738 [Worker-40] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /10-PortalParejasPersistenciaRest/src/test/java
+2017-01-17 13:57:44,872 [Worker-40] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for 10-PortalParejasPersistenciaRest
+2017-01-17 13:57:44,885 [Worker-40] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2017-01-17 13:57:45,021 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 13:57:45,028 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\src\main\resources
+2017-01-17 13:57:45,035 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 13:57:45,044 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\src\test\resources
+2017-01-17 13:57:45,054 [Worker-40] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of 10-PortalParejasPersistenciaRest
+2017-01-17 13:57:45,054 [Worker-40] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for 10-PortalParejasPersistenciaRest
+2017-01-17 13:57:45,085 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 13:59:04,914 [Worker-32] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cursospring:10-PortalParejasPersistenciaRest:0.0.1-SNAPSHOT @ C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\pom.xml.
+2017-01-17 13:59:05,046 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 13:59:05,052 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\src\main\resources
+2017-01-17 13:59:05,053 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 13:59:05,060 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\src\test\resources
+2017-01-17 13:59:05,060 [Worker-32] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of 10-PortalParejasPersistenciaRest
+2017-01-17 13:59:05,060 [Worker-32] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for 10-PortalParejasPersistenciaRest
+2017-01-17 13:59:05,068 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 13:59:29,247 [Worker-29] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cursospring:10-PortalParejasPersistenciaRest:0.0.1-SNAPSHOT @ C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\pom.xml.
+2017-01-17 13:59:29,393 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 13:59:29,404 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\src\main\resources
+2017-01-17 13:59:29,410 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 13:59:29,415 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\src\test\resources
+2017-01-17 13:59:29,420 [Worker-29] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of 10-PortalParejasPersistenciaRest
+2017-01-17 13:59:29,420 [Worker-29] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for 10-PortalParejasPersistenciaRest
+2017-01-17 13:59:29,428 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 14:09:03,794 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.cursospring:10-PortalParejasContratos:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+2017-01-17 14:09:03,970 [Worker-37] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cursospring:10-PortalParejasPersistenciaRest:0.0.1-SNAPSHOT @ C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\pom.xml.
+2017-01-17 14:09:03,998 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.cursospring:10-PortalParejasContratos:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+2017-01-17 14:09:04,059 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.cursospring:10-PortalParejasContratos:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+2017-01-17 14:09:04,157 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 14:09:04,163 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\src\main\resources
+2017-01-17 14:09:04,164 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 14:09:04,172 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\src\test\resources
+2017-01-17 14:09:04,173 [Worker-37] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of 10-PortalParejasPersistenciaRest
+2017-01-17 14:09:04,176 [Worker-37] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for 10-PortalParejasPersistenciaRest
+2017-01-17 14:09:04,179 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 14:09:12,185 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.cursospring:10-PortalParejasContatos:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+2017-01-17 14:09:12,370 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cursospring:10-PortalParejasPersistenciaRest:0.0.1-SNAPSHOT @ C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\pom.xml.
+2017-01-17 14:09:12,385 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.cursospring:10-PortalParejasContatos:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+2017-01-17 14:09:12,417 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.cursospring:10-PortalParejasContatos:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+2017-01-17 14:09:12,498 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 14:09:12,504 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\src\main\resources
+2017-01-17 14:09:12,509 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 14:09:12,515 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\src\test\resources
+2017-01-17 14:09:12,520 [Worker-4] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of 10-PortalParejasPersistenciaRest
+2017-01-17 14:09:12,520 [Worker-4] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for 10-PortalParejasPersistenciaRest
+2017-01-17 14:09:12,522 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 14:09:42,760 [Worker-32] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cursospring:10-PortalParejasPersistenciaRest:0.0.1-SNAPSHOT @ C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\pom.xml.
+2017-01-17 14:09:43,047 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 14:09:43,052 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\src\main\resources
+2017-01-17 14:09:43,057 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 14:09:43,061 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\src\test\resources
+2017-01-17 14:09:43,066 [Worker-32] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of 10-PortalParejasPersistenciaRest
+2017-01-17 14:09:43,066 [Worker-32] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for 10-PortalParejasPersistenciaRest
+2017-01-17 14:09:43,069 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 14:13:01,562 [Worker-40] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cursospring:10-PortalParejasPersistenciaRest:0.0.1-SNAPSHOT @ C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\pom.xml.
+2017-01-17 14:13:01,807 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 14:13:01,817 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\src\main\resources
+2017-01-17 14:13:01,823 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 14:13:01,831 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\src\test\resources
+2017-01-17 14:13:01,836 [Worker-40] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of 10-PortalParejasPersistenciaRest
+2017-01-17 14:13:01,836 [Worker-40] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for 10-PortalParejasPersistenciaRest
+2017-01-17 14:13:01,840 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 14:15:38,718 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.cursospring:10-PortalParejasPersistenciaRest:0.0.1-SNAPSHOT @ C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\pom.xml.
+2017-01-17 14:15:38,923 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 14:15:38,930 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\src\main\resources
+2017-01-17 14:15:38,934 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 14:15:38,938 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\src\test\resources
+2017-01-17 14:15:38,941 [Worker-15] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of 10-PortalParejasPersistenciaRest
+2017-01-17 14:15:38,941 [Worker-15] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for 10-PortalParejasPersistenciaRest
+2017-01-17 14:15:38,943 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 14:17:57,365 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 14:17:57,373 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\src\main\resources
+2017-01-17 14:17:57,378 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 14:17:57,394 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\src\test\resources
+2017-01-17 14:18:01,953 [Worker-38] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 14:18:01,960 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\src\main\resources
+2017-01-17 14:18:01,966 [Worker-38] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 14:18:01,973 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\src\test\resources
+2017-01-17 14:18:04,121 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 14:18:04,128 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\src\main\resources
+2017-01-17 14:18:04,133 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 14:18:04,141 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\src\test\resources
+2017-01-17 14:18:10,475 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 14:18:10,482 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\src\main\resources
+2017-01-17 14:18:10,487 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 14:18:10,495 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\src\test\resources
+2017-01-17 14:18:41,525 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 14:18:41,537 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\src\main\resources
+2017-01-17 14:18:41,542 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 14:18:41,549 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\src\test\resources
+2017-01-17 14:21:02,495 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 14:21:02,503 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\src\main\resources
+2017-01-17 14:21:02,508 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 14:21:02,515 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\src\test\resources
+2017-01-17 14:23:04,642 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 14:23:04,653 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\src\main\resources
+2017-01-17 14:23:04,659 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 14:23:04,669 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\src\test\resources
+2017-01-17 14:23:27,806 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 14:23:27,815 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\src\main\resources
+2017-01-17 14:23:27,819 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 14:23:27,826 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\src\test\resources
+2017-01-17 14:24:44,700 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 14:24:44,708 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\src\main\resources
+2017-01-17 14:24:44,713 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 14:24:44,721 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\src\test\resources
+2017-01-17 14:26:57,175 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 14:26:57,183 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\src\main\resources
+2017-01-17 14:26:57,187 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-17 14:26:57,194 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ATSTAFF\Desktop\workspace\10-PortalParejasPersistenciaRest\src\test\resources
