@@ -1,0 +1,32 @@
+package com.atsistemas;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.remoting.jaxws.SimpleJaxWsServiceExporter;
+
+import com.atsistemas.negocio.Negocio;
+import com.atsistemas.webservice.ServicioCalculadora;
+
+@Configuration
+@ComponentScan("com.atsistemas")
+public class Configuracion {
+
+	@Bean
+	public SimpleJaxWsServiceExporter simpleJaxWsServiceExporter(){
+		return new SimpleJaxWsServiceExporter();
+	}
+	
+	/*@Bean
+	public ServicioCalculadora servicio(Negocio negocio){
+		ServicioCalculadora servicio = new ServicioCalculadora();
+		servicio.setNegocio(negocio);
+		return servicio;
+	}
+	
+	@Bean
+	public Negocio negocio(){
+		return new Negocio();
+	}*/
+	
+}

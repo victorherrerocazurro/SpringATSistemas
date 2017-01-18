@@ -1,0 +1,11 @@
+package com.atsistemas;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class LanzadorServicio {
+
+	public static void main(String[] args) {
+		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(Configuracion.class);
+	}
+
+}

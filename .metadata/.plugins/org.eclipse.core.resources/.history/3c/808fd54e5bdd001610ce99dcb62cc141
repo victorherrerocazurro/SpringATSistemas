@@ -1,0 +1,22 @@
+package com.atsistemas.webservice;
+
+import javax.jws.WebMethod;
+import javax.jws.WebService;
+
+@Service
+@WebService
+public class ServicioCalculadora {
+	
+	//Los metodos publicos de esta clase son las operaciones
+	
+	@WebMethod
+	public int sumar(int a, int b){
+		return a+b;
+	}
+	
+	@WebMethod
+	public int restar(int a, int b){
+		return a-b;
+	}
+
+}

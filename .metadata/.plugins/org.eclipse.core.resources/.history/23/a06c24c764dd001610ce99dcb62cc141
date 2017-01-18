@@ -1,0 +1,17 @@
+package com.atsistemas;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import com.atsistemas.cliente.ClienteServicioPersonas;
+
+@Configuration
+public class ConfiguracionCliente {
+
+	@Bean
+	public ClienteServicioPersonas clienteServicioPersonas(){
+		ClienteServicioPersonas clienteServicioPersonas = new ClienteServicioPersonas();
+		return clienteServicioPersonas;
+	}
+	
+}

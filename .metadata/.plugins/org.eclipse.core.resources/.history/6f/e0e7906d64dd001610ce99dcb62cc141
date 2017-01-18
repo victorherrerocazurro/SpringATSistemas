@@ -1,0 +1,18 @@
+package com.atsistemas.cliente;
+
+import com.atsistemas.entidades.Persona;
+import com.atsistemas.webservice.IServicioPersonas;
+
+public class ClienteServicioPersonas {
+
+	private IServicioPersonas servicio;
+	
+	public void metodo(){
+		Persona persona = servicio.obtener();
+		
+		persona.setNombre("Juan Ramon");
+		
+		servicio.crear(persona);
+	}
+	
+}

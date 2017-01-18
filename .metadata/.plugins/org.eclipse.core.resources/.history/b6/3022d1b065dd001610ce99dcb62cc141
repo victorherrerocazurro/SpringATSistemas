@@ -1,0 +1,29 @@
+package com.atsistemas;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.remoting.jaxws.JaxWsPortProxyFactoryBean;
+
+import com.atsistemas.cliente.ClienteServicioPersonas;
+import com.atsistemas.webservice.IServicioPersonas;
+
+@Configuration
+public class ConfiguracionCliente {
+
+	@Bean
+	public JaxWsPortProxyFactoryBean factoryBean(){
+		JaxWsPortProxyFactoryBean factoryBean = new JaxWsPortProxyFactoryBean();
+		
+		
+		
+		return factoryBean;
+	}
+	
+	@Bean
+	public ClienteServicioPersonas clienteServicioPersonas(IServicioPersonas servicio){
+		ClienteServicioPersonas clienteServicioPersonas = new ClienteServicioPersonas();
+		clienteServicioPersonas.setServicio(servicio);
+		return clienteServicioPersonas;
+	}
+	
+}

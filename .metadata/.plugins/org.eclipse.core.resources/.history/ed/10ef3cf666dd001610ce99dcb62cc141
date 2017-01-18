@@ -1,0 +1,11 @@
+package com.atsistemas.webservice;
+
+import com.atsistemas.entidades.Persona;
+
+public interface IServicioPersonas {
+
+	void crear(Persona persona);
+
+	Persona obtener();
+
+}

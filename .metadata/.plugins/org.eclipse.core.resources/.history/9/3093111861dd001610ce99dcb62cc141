@@ -1,0 +1,23 @@
+package com.atsistemas.webservice;
+
+import java.util.Date;
+
+import javax.jws.WebService;
+
+import org.springframework.stereotype.Service;
+
+import com.atsistemas.entidades.Persona;
+
+@Service
+@WebService(portName="personasPort")
+public class ServicioPersonas {
+
+	public void crear(Persona persona){
+		System.out.println(persona.getNombre());
+	}
+	
+	public Persona obtener(){
+		return new Persona(1, "Juan", new Date());
+	}
+	
+}

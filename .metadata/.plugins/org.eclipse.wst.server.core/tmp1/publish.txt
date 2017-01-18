@@ -1,8 +1,3 @@
 #Tomcat publish data
-#Tue Jan 17 17:41:23 CET 2017
-org.eclipse.jst.j2ee.server\:10-PortalParejasControlador=C\:\\Users\\ATSTAFF\\Desktop\\apache-tomcat-8.5.9\\wtpwebapps\\10-PortalParejasWeb\\WEB-INF\\lib\\10-PortalParejasControlador-0.0.1-SNAPSHOT.jar
-org.eclipse.jst.jee.server\:10-PortalParejasPersistenciaRest=C\:\\Users\\ATSTAFF\\Desktop\\apache-tomcat-8.5.9\\wtpwebapps\\10-PortalParejasPersistenciaRest
-org.eclipse.jst.j2ee.server\:10-PortalParejasContatos=C\:\\Users\\ATSTAFF\\Desktop\\apache-tomcat-8.5.9\\wtpwebapps\\10-PortalParejasWeb\\WEB-INF\\lib\\10-PortalParejasContatos-0.0.1-SNAPSHOT.jar
-org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\ATSTAFF\\.m2\\repository\\org\\springframework\\spring-web\\4.3.5.RELEASE\\spring-web-4.3.5.RELEASE.jar=C\:\\Users\\ATSTAFF\\Desktop\\apache-tomcat-8.5.9\\wtpwebapps\\10-PortalParejasWeb\\WEB-INF\\lib\\spring-web-4.3.5.RELEASE.jar
-org.eclipse.jst.jee.server\:10-PortalParejasWeb=C\:\\Users\\ATSTAFF\\Desktop\\apache-tomcat-8.5.9\\wtpwebapps\\10-PortalParejasWeb
-org.eclipse.jst.j2ee.server\:10-PortalParejasNegocioServicioClientePersistenciaRest=C\:\\Users\\ATSTAFF\\Desktop\\apache-tomcat-8.5.9\\wtpwebapps\\10-PortalParejasWeb\\WEB-INF\\lib\\10-PortalParejasNegocioServicioClientePersistenciaRest-0.0.1-SNAPSHOT.jar
+#Wed Jan 18 12:20:08 CET 2017
+org.eclipse.jst.jee.server\:01-ExpedientesXEnunciado=C\:\\Users\\ATSTAFF\\Desktop\\apache-tomcat-8.5.9\\wtpwebapps\\01-ExpedientesXEnunciado

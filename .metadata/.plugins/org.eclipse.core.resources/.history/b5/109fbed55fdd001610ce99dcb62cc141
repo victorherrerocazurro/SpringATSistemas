@@ -1,0 +1,19 @@
+package com.atsistemas.webservice;
+
+import javax.jws.WebService;
+
+import org.springframework.stereotype.Service;
+
+@Service
+@WebService
+public class ServicioPersonas {
+
+	public void crear(Persona persona){
+		
+	}
+	
+	public Persona obtener(){
+		return null;
+	}
+	
+}

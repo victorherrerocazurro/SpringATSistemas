@@ -1,0 +1,35 @@
+package com.atsistemas.webservice;
+
+import javax.jws.WebMethod;
+import javax.jws.WebService;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.atsistemas.negocio.Negocio;
+
+//@Service("servicio")
+@Service
+@WebService(serviceName="servicioCalculadora")
+public class ServicioCalculadora {
+	
+	//Los metodos publicos de esta clase son las operaciones
+	@Autowired
+	private Negocio negocio;
+	
+	@WebMethod(exclude=true)
+	public void setNegocio(Negocio negocio) {
+		this.negocio = negocio;
+	}
+
+	@WebMethod
+	public int sumar(int a, int b){
+		return negocio.sumarEnteros(a, b);
+	}
+	
+	@WebMethod
+	public int restar(int a, int b){
+		return negocio.restarEnteros(a, b);
+	}
+
+}

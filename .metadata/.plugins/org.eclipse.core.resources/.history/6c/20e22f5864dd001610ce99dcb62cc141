@@ -1,0 +1,9 @@
+package com.atsistemas.cliente;
+
+import com.atsistemas.webservice.IServicioPersonas;
+
+public class ClienteServicioPersonas {
+
+	private IServicioPersonas servicio;
+	
+}
