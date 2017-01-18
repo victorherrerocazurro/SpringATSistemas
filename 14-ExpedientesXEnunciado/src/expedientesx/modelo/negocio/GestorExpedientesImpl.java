@@ -2,9 +2,12 @@ package expedientesx.modelo.negocio;
 
 import java.util.List;
 
+import javax.annotation.security.RolesAllowed;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PostFilter;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 import expedientesx.modelo.entidad.Expediente;
 import expedientesx.modelo.persistencia.ExpedientesDao;
@@ -20,6 +23,7 @@ public class GestorExpedientesImpl implements GestorExpendientes {
 		System.out.println("Actualizado Expediente: " + expediente);
 	}
 
+	@PreAuthorize("hasRole('ROLE_DIRECTOR') or hasRole('ROLE_AGENTE_ESPECIAL')")
 	public void clasificar(Expediente expediente) {
 		if (!expediente.isClasificado()) {
 			expediente.setClasificado(true);
@@ -28,6 +32,8 @@ public class GestorExpedientesImpl implements GestorExpendientes {
 		}
 	}
 
+	//@RolesAllowed("ROLE_AGENTE_ESPECIAL,ROLE_DIRECTOR")
+	@PreAuthorize("hasRole('ROLE_DIRECTOR') or #expediente.investigador == authentication.name")
 	public void desclasificar(Expediente expediente) {
 		if (expediente.isClasificado()) {
 			expediente.setClasificado(false);
@@ -36,6 +42,7 @@ public class GestorExpedientesImpl implements GestorExpendientes {
 		}
 	}
 
+	@PostFilter("not filterObject.informe.contains(principal.username)")
 	public List<Expediente> listarTodos() {
 		List<Expediente>expedientes=expedientesDao.listar();
 		System.out.println("Mostrar "+expedientes.size()+" Expedientes: " + expedientes.toString());

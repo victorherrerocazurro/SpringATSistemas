@@ -61,6 +61,15 @@
          Define a non-SSL/TLS HTTP/1.1 Connector on port 8080
     -->
     <Connector connectionTimeout="20000" port="8080" protocol="HTTP/1.1" redirectPort="8443"/>
+    
+    <Connector SSLEnabled="true" acceptCount="100" 
+		connectionTimeout="20000" executor="tomcatThreadPool" 
+		keyAlias="tcserver" keystoreFile="${catalina.base}/conf/tcserver.keystore" 
+		keystorePass="changeme" 
+		maxKeepAliveRequests="15" port="8443" protocol="HTTP/1.1" 
+		redirectPort="8443" scheme="https" secure="true"/>
+    
+    
     <!-- A "Connector" using the shared thread pool-->
     <!--
     <Connector executor="tomcatThreadPool"
