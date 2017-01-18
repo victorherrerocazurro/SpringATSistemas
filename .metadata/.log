@@ -2927,3 +2927,6 @@ Caused by: java.io.FileNotFoundException: C:\Users\ATSTAFF\.m2\repository\com\at
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2017-01-18 12:16:36.039
 !MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2017-01-18 12:35:59.465
+!MESSAGE Port 8080 required by Pivotal tc Server Developer Edition v3.2 is already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).

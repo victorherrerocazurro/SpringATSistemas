@@ -1,9 +1,6 @@
 #Tomcat publish data
-#Tue Jan 17 17:34:21 CET 2017
-org.eclipse.jst.j2ee.server\:10-PortalParejasControlador=C\:\\Users\\ATSTAFF\\Desktop\\sts-bundle\\pivotal-tc-server-developer-3.2.2.RELEASE\\base-instance\\wtpwebapps\\10-PortalParejasWeb\\WEB-INF\\lib\\10-PortalParejasControlador-0.0.1-SNAPSHOT.jar
+#Wed Jan 18 12:35:56 CET 2017
 org.eclipse.jst.jee.server\:09-Mvc=C\:\\Users\\ATSTAFF\\Desktop\\sts-bundle\\pivotal-tc-server-developer-3.2.2.RELEASE\\base-instance\\wtpwebapps\\09-Mvc
-org.eclipse.jst.j2ee.server\:10-PortalParejasContatos=C\:\\Users\\ATSTAFF\\Desktop\\sts-bundle\\pivotal-tc-server-developer-3.2.2.RELEASE\\base-instance\\wtpwebapps\\10-PortalParejasWeb\\WEB-INF\\lib\\10-PortalParejasContatos-0.0.1-SNAPSHOT.jar
-org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\ATSTAFF\\.m2\\repository\\org\\springframework\\spring-web\\4.3.5.RELEASE\\spring-web-4.3.5.RELEASE.jar=C\:\\Users\\ATSTAFF\\Desktop\\sts-bundle\\pivotal-tc-server-developer-3.2.2.RELEASE\\base-instance\\wtpwebapps\\10-PortalParejasWeb\\WEB-INF\\lib\\spring-web-4.3.5.RELEASE.jar
+org.eclipse.jst.jee.server\:14-ExpedientesXEnunciado=C\:\\Users\\ATSTAFF\\Desktop\\sts-bundle\\pivotal-tc-server-developer-3.2.2.RELEASE\\base-instance\\wtpwebapps\\14-ExpedientesXEnunciado
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\ATSTAFF\\.m2\\repository\\org\\springframework\\spring-web\\4.2.6.RELEASE\\spring-web-4.2.6.RELEASE.jar=C\:\\Users\\ATSTAFF\\Desktop\\sts-bundle\\pivotal-tc-server-developer-3.2.2.RELEASE\\base-instance\\wtpwebapps\\14-ExpedientesXEnunciado\\WEB-INF\\lib\\spring-web-4.2.6.RELEASE.jar
 org.eclipse.jst.jee.server\:10-PortalParejasWeb=C\:\\Users\\ATSTAFF\\Desktop\\sts-bundle\\pivotal-tc-server-developer-3.2.2.RELEASE\\base-instance\\wtpwebapps\\10-PortalParejasWeb
-org.eclipse.jst.j2ee.server\:10-PortalParejasServicio=C\:\\Users\\ATSTAFF\\Desktop\\sts-bundle\\pivotal-tc-server-developer-3.2.2.RELEASE\\base-instance\\wtpwebapps\\10-PortalParejasWeb\\WEB-INF\\lib\\10-PortalParejasServicio-0.0.1-SNAPSHOT.jar
-org.eclipse.jst.j2ee.server\:10-PortalParejasNegocioServicioClientePersistenciaRest=C\:\\Users\\ATSTAFF\\Desktop\\sts-bundle\\pivotal-tc-server-developer-3.2.2.RELEASE\\base-instance\\wtpwebapps\\10-PortalParejasWeb\\WEB-INF\\lib\\10-PortalParejasNegocioServicioClientePersistenciaRest-0.0.1-SNAPSHOT.jar

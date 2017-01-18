@@ -1,5 +1,5 @@
 ############################################################################################################# 
-# 1. Crear una clase para configurar Spring Security
+# i. Crear una clase para configurar Spring Security
 #############################################################################################################  
 package expedientesx.cfg;
 import org.springframework.context.annotation.Configuration;
@@ -13,7 +13,7 @@ public class ConfiguracionSpringSecurity extends WebSecurityConfigurerAdapter {
 }
 
 ############################################################################################################# 
-# 2. Añadir la configuración de seguridad con una seguridad mínima 
+# ii. Añadir la configuración de seguridad con una seguridad mínima 
 ############################################################################################################# 
 @Autowired
 public void configureGlobalSecurity(AuthenticationManagerBuilder auth) throws Exception {
@@ -32,14 +32,14 @@ protected void configure(HttpSecurity http) throws Exception {
 }
 
 ############################################################################################################# 
-# 3. Añadir el filtro de seguridad en el método 'onStartup' de la clase 'AppInitializer'
+# iii. Añadir el filtro de seguridad en el método 'onStartup' de la clase 'AppInitializer'
 ############################################################################################################# 
 servletContext.addFilter("springSecurityFilterChain", 
 	new DelegatingFilterProxy("springSecurityFilterChain"))
 		.addMappingForUrlPatterns(null, false, "/*");     
   
 ############################################################################################################# 
-# 4.  Configurar el login/logout explícitamente
+# iv.  Configurar el login/logout expl�citamente
 ############################################################################################################# 
 sustituir el bloque anterior por este.
 
@@ -61,7 +61,7 @@ http
 			
 
 ############################################################################################################# 
-# 4. (cont). Solucionar problemas de acceso a recursos
+# iv. (cont). Solucionar problemas de acceso a recursos
 ############################################################################################################# 
 http
 .authorizeRequests()
@@ -71,7 +71,7 @@ http
 	.antMatchers("/**").access("hasRole('AGENTE_ESPECIAL')");
 
 ############################################################################################################# 
-# 5.  Logout en index.jsp
+# v.  Logout en index.jsp
 ############################################################################################################# 
 	<!-- LOGOUT -->	
 	<p> 
@@ -82,7 +82,7 @@ http
 	<%= request.getUserPrincipal() %> 
 	
 ############################################################################################################# 
-# 6.    UserDetailsService
+# vi.    UserDetailsService
 ############################################################################################################# 	
 	@Autowired
 	public void configureGlobalSecurity(AuthenticationManagerBuilder auth) throws Exception {
@@ -100,7 +100,7 @@ http
 	}
 
 ############################################################################################################# 
-# 7.    Proteger contrase�as de los usuarios encript�ndolas
+# v.    Proteger contrase�as de los usuarios encript�ndolas
 ############################################################################################################# 	
 	@Bean
 	public PasswordEncoder passwordEncoder(){
@@ -124,7 +124,7 @@ http
 	}
 		
 ############################################################################################################# 
-# 8.    Añadir funcionalidad "Remember Me"
+# vi.    Añadir funcionalidad "Remember Me"
 #############################################################################################################
 http.rememberMe() 
 	.rememberMeParameter("remember-me-param")
@@ -132,7 +132,7 @@ http.rememberMe()
 	.tokenValiditySeconds(86400);
 
 ############################################################################################################# 
-# 9.    Seguridad en el canal de transporte (HTTPS) - Configurar restricciones y puertos
+# vii.    Seguridad en el canal de transporte (HTTPS) - Configurar restricciones y puertos
 #############################################################################################################
 http
 	.requiresChannel()
@@ -142,7 +142,7 @@ http
 	.portMapper().http(8080).mapsTo(8443);
 	
 ############################################################################################################# 
-# 10.    Seguridad en el canal de transporte (HTTPS) - Crear conector SSL en Servidor
+# vii.    Seguridad en el canal de transporte (HTTPS) - Crear conector SSL en Servidor
 #############################################################################################################	
 server.xml
 
@@ -156,7 +156,7 @@ server.xml
 copiar tcserver.keystore al directorio a la configuracion de Tomcat en el workspace	
 	
 ############################################################################################################# 
-# 11.    Control de la expiración de sesiones
+# viii.    Control de la expiración de sesiones
 #############################################################################################################
 		http
 		.logout()
@@ -168,14 +168,14 @@ copiar tcserver.keystore al directorio a la configuracion de Tomcat en el worksp
 			.invalidSessionUrl("/paginas/sesion-expirada.jsp");
 		
 ############################################################################################################# 
-# 12.    Control de la concurrencia de sesiones
+# ix.    Control de la concurrencia de sesiones
 #############################################################################################################	
     public void onStartup(ServletContext servletContext) throws ServletException {
 		//...
         servletContext.addListener(new HttpSessionEventPublisher());
 			
 ############################################################################################################# 
-# 12 (Cont).    Control de la concurrencia de sesiones
+# ix (Cont).    Control de la concurrencia de sesiones
 #############################################################################################################	
 http
 	.sessionManagement()
@@ -184,7 +184,7 @@ http
 	.maxSessionsPreventsLogin(true);
 
 ############################################################################################################# 
-# 13.    Session fixation
+# x.    Session fixation
 #############################################################################################################	
 Configurado por defecto.
 
@@ -192,7 +192,7 @@ http.sessionManagement()
     .sessionFixation().migrateSession();
     
 ############################################################################################################# 
-# 14.	Uso de la librería de etiquetas (Spring Security Taglibs)
+# xi.	Uso de la librería de etiquetas (Spring Security Taglibs)
 #############################################################################################################	  
 Deprecated:	
 	<sec:authorize ifAnyGranted="ROLE_AGENTE_ESPECIAL,ROLE_DIRECTOR">
@@ -201,7 +201,7 @@ Deprecated:
 	</sec:authorize>
 
 ############################################################################################################# 
-# 15.	Uso Expresiones SpEL con etiquetas Security Taglib
+# xii.	Uso Expresiones SpEL con etiquetas Security Taglib
 #############################################################################################################
 <sec:authorize access="hasAnyRole('ROLE_AGENTE_ESPECIAL','ROLE_DIRECTOR')">
 	<a href="<c:url value='/expedientesx/clasificar?id=${expediente.id}'/>">clasificar</a>
@@ -216,26 +216,7 @@ isAnonymous()
 isAuthenticated()
 
 ############################################################################################################# 
-# 16.	CSRF
-#############################################################################################################
-
-Comentar en ConfiguracionSpringSecurity:
-
-http.csrf().disable();
-
-Añadir un campo oculto para guardar el token en todos los formularios que utilicen el método POST:
--nuestro-login.jsp
--listadoExpedientes.jsp
-
-<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>	
-
-Equivalente con la librería de etiquetas:
-
-<sec:csrfInput />
-
-
-############################################################################################################# 
-# 17.	Seguridad en la invocación de métodos de negocio con anotaciones Spring Security
+# xiii.	Seguridad en la invocación de métodos de negocio con anotaciones Spring Security
 #############################################################################################################
 @Configuration
 @EnableWebSecurity
@@ -249,7 +230,7 @@ http
 	.accessDeniedPage("/paginas/acceso-denegado.jsp");
 	
 ############################################################################################################# 
-# 17 (Cont).	Seguridad en la invocaci�n de m�todos de negocio con anotaciones Spring Security
+# xiii (Cont).	Seguridad en la invocaci�n de m�todos de negocio con anotaciones Spring Security
 #############################################################################################################	
 @Secured("ROLE_AGENTE_ESPECIAL,ROLE_DIRECTOR")
 void clasificar(Expediente expediente);
@@ -258,23 +239,23 @@ void clasificar(Expediente expediente);
 void desclasificar(Expediente expediente);
 
 ############################################################################################################# 
-# 18.	Seguridad en la invocación de métodos de negocio con anotaciones JSR-250
+# xiv.	Seguridad en la invocación de métodos de negocio con anotaciones JSR-250
 #############################################################################################################
 @EnableGlobalMethodSecurity(securedEnabled = true, jsr250Enabled=true)
 	
 ############################################################################################################# 
-# 18 (Cont).	Seguridad en la invocación de métodos de negocio con anotaciones JSR-250
+# xiv (Cont).	Seguridad en la invocación de métodos de negocio con anotaciones JSR-250
 #############################################################################################################
 @RolesAllowed("ROLE_AGENTE_ESPECIAL,ROLE_DIRECTOR")
 void desclasificar(Expediente expediente);
 
 ############################################################################################################# 
-# 19.	Seguridad en la invocación de métodos de negocio con Expresiones SpEL (Preinvocación)
+# xv.	Seguridad en la invocación de métodos de negocio con Expresiones SpEL (Preinvocación)
 #############################################################################################################
 @EnableGlobalMethodSecurity(securedEnabled = true, jsr250Enabled=true, prePostEnabled=true)
 	
 ############################################################################################################# 
-# 19 (Cont).	Seguridad en la invocación de métodos de negocio con Expresiones SpEL (Preinvocación)
+# xv (Cont).	Seguridad en la invocación de métodos de negocio con Expresiones SpEL (Preinvocación)
 #############################################################################################################
 @PreAuthorize("hasRole('ROLE_DIRECTOR')")
 void clasificar(Expediente expediente);
@@ -283,58 +264,15 @@ void clasificar(Expediente expediente);
 void desclasificar(Expediente expediente);
 
 ############################################################################################################# 
-# 20.	Seguridad en la invocación de métodos de negocio con Expresiones SpEL (Postinvocación)
+# xvi.	Seguridad en la invocación de métodos de negocio con Expresiones SpEL (Postinvocación)
 #############################################################################################################	
 @PreAuthorize("hasAnyRole('ROLE_AGENTE_ESPECIAL','ROLE_DIRECTOR')")
 @PostAuthorize("hasRole('ROLE_DIRECTOR') or returnObject.investigador == authentication.name")
 Expediente mostrar(Long id);
 	
 ############################################################################################################# 
-# 21.	Seguridad en la invocación de métodos de negocio con Expresiones SpEL (Filtro de resultados)
+# xvii.	Seguridad en la invocación de métodos de negocio con Expresiones SpEL (Filtro de resultados)
 #############################################################################################################	
 @PostFilter("not filterObject.informe.contains(principal.username)")
 List<Expediente> mostrarTodos();
 
-
-############################################################################################################# 
-# 22. Utilización del sistema de votantes - Explicitar la configuración del espacio de nombres Security
-#############################################################################################################
-@Bean
-public AffirmativeBased accessDecisionManager() {
-
-    AffirmativeBased affirmativeBased = new AffirmativeBased(
-	Arrays.asList(roleVoter(), 
-		      authenticatedVoter(), 
-		      webExpressionVoter(),
-    affirmativeBased.setAllowIfAllAbstainDecisions(false);
-    return affirmativeBased;
-}	
-
-http
-.authorizeRequests()
-	.accessDecisionManager(accessDecisionManager())
-	.antMatchers("/paginas/*").permitAll()
-	.antMatchers("/css/*").permitAll()
-	.antMatchers("/imagenes/*").permitAll()
-	.antMatchers("/**").access("isAuthenticated()");
-
-
-
-############################################################################################################# 
-# 23.  Utilización del sistema de votantes - Personalizar la configuracion del accessDecisionManager
-#############################################################################################################
-Sustituyendo a la anterior
-
-@Bean
-public UnanimousBased accessDecisionManager() throws Exception {
-	UnanimousBased unanimousBased = new UnanimousBased(
-			Arrays.asList(new AuthenticatedVoter(), 
-					  new WebExpressionVoter(), 
-					  new RoleVoter(),
-					  new HorarioVoter() ) );
-	unanimousBased.setAllowIfAllAbstainDecisions(false);
-	unanimousBased.afterPropertiesSet();
-
-	return unanimousBased;
-}
-    
