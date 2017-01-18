@@ -1,4 +1,4 @@
 #Tomcat publish data
-#Wed Jan 18 13:10:33 CET 2017
+#Wed Jan 18 14:29:51 CET 2017
 org.eclipse.jst.jee.server\:14-ExpedientesXEnunciado=C\:\\Users\\ATSTAFF\\Desktop\\apache-tomcat-8.5.9\\wtpwebapps\\14-ExpedientesXEnunciado
 org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\ATSTAFF\\.m2\\repository\\org\\springframework\\spring-web\\4.2.6.RELEASE\\spring-web-4.2.6.RELEASE.jar=C\:\\Users\\ATSTAFF\\Desktop\\apache-tomcat-8.5.9\\wtpwebapps\\14-ExpedientesXEnunciado\\WEB-INF\\lib\\spring-web-4.2.6.RELEASE.jar

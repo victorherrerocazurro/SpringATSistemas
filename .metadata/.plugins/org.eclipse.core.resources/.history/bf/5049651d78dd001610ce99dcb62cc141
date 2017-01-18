@@ -1,0 +1,5 @@
+package expedientesx.cfg;
+
+public class ConfiguracionSpringSecurity {
+
+}

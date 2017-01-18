@@ -1,0 +1,68 @@
+package expedientesx.cfg;
+
+import java.util.Properties;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.provisioning.InMemoryUserDetailsManager;
+
+@Configuration
+@EnableWebSecurity
+public class ConfiguracionSpringSecurity extends WebSecurityConfigurerAdapter {
+
+	@Bean
+	public PasswordEncoder passwordEncoder(){
+		PasswordEncoder encoder = new BCryptPasswordEncoder();
+		return encoder;
+	}
+	
+	@Autowired
+	public void configureGlobalSecurity(AuthenticationManagerBuilder auth, PasswordEncoder pe) throws Exception {
+		auth.userDetailsService(userDetailsService()).passwordEncoder(pe);
+	}
+	
+	public UserDetailsService userDetailsService(){
+        Properties usuarios = new Properties();
+        usuarios.put("Fernando","$2a$10$scoHCulLqQXorQEhHgjkguUC4A2UeI8cWbl5FHmXXMnooWoiNBMqe,ROLE_AGENTE,enabled");
+		usuarios.put("Mulder"  ,"$2a$10$CvqEzBHzl/DkAzlZuANmculYrzf3nZoT4.oFYOSq4uCxl/JvmX6RS,ROLE_AGENTE_ESPECIAL,enabled");
+		usuarios.put("Scully"  ,"$2a$10$SzudF7JCLfcyugshO/o5Bewdrmy53MvvPNjDz/7pWNfuuiDrpZV76,ROLE_AGENTE_ESPECIAL,enabled");
+		usuarios.put("Skinner" ,"$2a$10$6L7kqb6kRabHuTitc0f9muGhA2D4Q7.mVlKhS6R42Tsca.6Q7/I2O,ROLE_DIRECTOR,enabled");
+        
+		return new InMemoryUserDetailsManager(usuarios);
+	}
+	
+
+	
+	
+	@Override
+	protected void configure(HttpSecurity http) throws Exception {
+		http
+		.formLogin()
+			.loginPage("/paginas/nuestro-login.jsp")
+			.failureUrl("/paginas/nuestro-login.jsp?login_error");
+
+		http
+		.logout()
+			.logoutSuccessUrl("/paginas/desconectado.jsp");
+
+		http
+		.authorizeRequests()
+			.antMatchers("/paginas/*").permitAll()
+			.antMatchers("/css/*").permitAll()
+			.antMatchers("/imagenes/*").permitAll()
+			.antMatchers("/**").access("hasRole('AGENTE_ESPECIAL')");
+
+		http
+			.csrf().disable();
+		
+	}
+
+}
