@@ -1,0 +1,14 @@
+package com.cursospring;
+
+public interface IPersistencia {
+
+	/**
+	 * Ante el string aceptado, se cogera su tamaño, se retara ese tamaño a el resultado 
+	 * de sumar un nuemero aleatorio y 27 
+	 * 
+	 * @param dato
+	 * @return
+	 */
+	long salvar(String dato);
+
+}

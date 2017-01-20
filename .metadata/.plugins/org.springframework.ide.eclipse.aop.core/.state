@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
-<aop-project name="10-PortalParejasServicio"/>
-<aop-project name="10-PortalParejasPersistenciaRest"/>
+<aop-project name="15-Test"/>
+<aop-project name="16-SpringBoot"/>
+<aop-project name="05-Data"/>
 <aop-project name="09-Mvc"/>
-<aop-project name="MyProducts"/>
-<aop-project name="12-SimpsonsRest"/>
 <aop-project name="01-FactoriaDeBeans"/>
-<aop-project name="10-PortalParejasWeb"/>
-<aop-project name="10-PortalParejasNegocioServicioClientePersistenciaRest"/>
-<aop-project name="10-PortalParejasControlador"/>
-<aop-project name="10-PortalParejasNegocio"/>
-<aop-project name="10-PortalParejasContatos"/>
 <aop-project name="11-Rest"/>
+<aop-project name="17-SpringBoot"/>
 </aop-reference-model>

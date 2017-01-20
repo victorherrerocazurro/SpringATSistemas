@@ -1,0 +1,17 @@
+package com.cursospring;
+
+import org.junit.Test;
+import org.springframework.web.servlet.ModelAndView;
+
+public class PruebaControlador {
+
+	private Controlador sut = new Controlador();
+	
+	@Test
+	public void pruebaControlador(){
+		
+		
+		sut.altaDeUsuario("", new ModelAndView());
+	}
+	
+}

@@ -1,5 +1,0 @@
-package com.cursospring;
-
-public class ProxySeguridad extends Target {
-
-}

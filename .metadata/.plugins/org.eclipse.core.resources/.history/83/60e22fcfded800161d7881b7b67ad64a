@@ -1,8 +1,0 @@
-package com.cursospring.modelo.persistencia;
-
-public interface UsuarioDao<T> {
-
-	void alta(T entidad);
-	
-	
-}

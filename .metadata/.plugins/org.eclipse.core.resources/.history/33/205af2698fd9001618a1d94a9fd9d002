@@ -1,8 +1,0 @@
-package com.cursospring.modelo.entidades;
-
-public class Snippet {
-	public static void main(String[] args) {
-		com.cursospring.modelo.entidades
-	}
-}
-

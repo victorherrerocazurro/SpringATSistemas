@@ -1,7 +1,0 @@
-package com.atsistemas.persistencia;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-public interface ClienteRepository extends JpaRepository<com.atsistemas.entidades.Cliente, Integer> {
-
-}

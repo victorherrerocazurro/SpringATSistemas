@@ -1,0 +1,14 @@
+package com.cursospring;
+
+import org.junit.Test;
+
+public class PruebaControlador {
+
+	private Controlador sut = new Controlador();
+	
+	@Test
+	public void pruebaControlador(){
+		
+	}
+	
+}

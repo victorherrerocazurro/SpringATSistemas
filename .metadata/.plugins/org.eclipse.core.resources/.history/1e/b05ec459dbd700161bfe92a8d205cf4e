@@ -1,8 +1,0 @@
-package com.atsistemas.entidades;
-
-import javax.persistence.Entity;
-
-@Entity
-public class Cliente {
-
-}

@@ -1,0 +1,26 @@
+package com.cursospring;
+
+import static org.junit.Assert.fail;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+
+@RunWith(org.springframework.test.context.junit4.SpringJUnit4ClassRunner.class)
+@ContextConfiguration(classes=Configuracion.class)
+public class PruebaServicio {
+
+	@Autowired
+	private Servicio servicio;
+	
+	@Test
+	public void test() {
+		
+		
+		servicio.alta("");
+		
+		fail("Not yet implemented");
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.cursospring;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class Configuracion {
+
+	@Bean
+	public Servicio servicio(){
+		return new Servicio();
+	}
+	
+}
